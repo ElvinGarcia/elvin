@@ -1,0 +1,10 @@
+/* These are the theme variable colors used throughout the website */
+
+:root{
+  --main-color:#1c1a1a;
+  --accent-color:#5353a7;
+  --font-color:#eddede;
+  --gray:#808080;
+}
+
+

@@ -1,0 +1,27 @@
+/* Nav menu start */
+.logo{
+  display: flex;
+  align-items: center;
+  gap:1em;
+  color: var(--font-color);
+}
+
+.nav-menu{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  background-color: var(--main-color);
+  padding:1.5em 2em 1em;
+}
+
+.nav-menu ul{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap:0 35px;
+}
+
+
+
+
+/* Nav menu end */

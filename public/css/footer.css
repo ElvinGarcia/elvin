@@ -1,0 +1,54 @@
+
+
+/* footer start */
+footer{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  text-align: center;
+  color:var(--font-color);
+  background-color: var(--main-color);
+  padding-top: 2em;
+  row-gap:2em;
+}
+
+ .logo.footer{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+ }
+
+ .logo.footer>a{
+  padding:.5em; /*increases the clickable area*/
+ }
+
+ footer > ul.site_links{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  column-gap: 2em;
+ }
+
+ footer > hr.footer.divider{
+  border: 1px var(--gray) solid; /* need to make this fading on both ends*/
+  width: 80%;
+  margin:2em 0;
+  opacity: .1;
+
+ }
+ footer > p.copyright{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom:2em; ;
+ }
+
+ footer > div.social_links{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  column-gap: 2em;
+  margin-bottom: 4em;
+ }
+
+/* footer end */
