@@ -3,33 +3,36 @@ import { NavLink } from "react-router-dom";
 
 
 class FooterMenu extends Component{
-
   render() {
+    const date = new Date();
+    const fullYear = date.getFullYear();
 
-    if (Array.isArray(this.props.url)) {
-      return this.props.url.map((url, id) => (
-        <li className="nav-item" key={id}>
-          <a href={url} target="_blank" rel="noreferrer" className="nav-link">
-          {url}
-        </a>
-          </li>
+    const images = this.props.images.map((obj, id) => {
+      return obj.type === "logo" ? <NavLink to={obj.url} alt={obj.alt} key={id} className="footer-logo">{obj.svg}</NavLink> : null
+    });
 
-     ))
-
-    } else {
-      return (
-        <li className="nav-item">
-        <NavLink
-            to={this.props.name}
-            className="nav-link"
-        >
-          {this.props.name}
-          </NavLink>
-          </li>
-      )
+    const site_links = this.props.site_links.map((obj, id) => {
+      return obj.type === "site_links" ? <li className="footer-list-item" key={id}> <NavLink to={obj.url} className="nav-link"> {obj.name}</NavLink> </li> : null;
     }
+    );
+
+    const social_links = this.props.social_links.map((obj, id) => {
+      return obj.type === "social_links" ? <NavLink to={obj.href} name={obj.name} key={id}>{obj.svg}</NavLink> : null;
+    }
+    );
+    return (
+      <>
+        <div className="logo footer">{images}</div>
+        <ul className="site_links">{site_links}</ul>
+        <hr className="footer divider"></hr>
+        <p className="copyright">All material &#169; Elvin Garcia {fullYear}</p>
+        <div className="social_links">{social_links} </div>
+      </>
+    )
+  }
+
 
   }
-}
+
 
 export default FooterMenu

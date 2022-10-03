@@ -1,6 +1,7 @@
 import React from "react"
 import Nav from '../components/header/Nav'
 import Footer from '../components/footer/Footer'
+import Main from "../components/main/Main";
 import { Outlet } from "react-router-dom";
 
 
@@ -9,7 +10,8 @@ const Layout = () => {
     <div className="container">
       <Nav />
       <Outlet />
-      <Footer/>
+      <Main />
+      <Footer />
     </div>
   );
 };
