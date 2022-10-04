@@ -5,9 +5,15 @@ import Content from "./Content";
 class Presentation extends Component{
 
   render() {
+    const asset= {
+      name: "tree-lanscape",
+      path: "./assets/images/earth-wallpapers.jpg",
+      alt: "tree_landscape",
+    }
+
     return (
       <section className="presentation">
-        <Content />
+        <Content asset={asset} />
       </section>
     )
   }

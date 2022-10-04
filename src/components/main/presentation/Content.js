@@ -4,9 +4,7 @@ class Content extends Component{
 
   render() {
     return (
-      <div>
-
-      </div>
+      <img src={this.props.asset.path} alt={this.props.asset.alt} />
     )
   }
 }

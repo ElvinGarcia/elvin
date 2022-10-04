@@ -10,7 +10,9 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route path="*" element={<p>~~Nothing to see here ~~</p> }/>
+          <Route path="/Writing" element={"under construction" }/>
+          <Route path="/Speaking" element={"under construction" }/>
+          <Route path="/Projecta" element={"under construction" }/>
         </Route>
       </Routes>
     </>
