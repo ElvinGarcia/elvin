@@ -1,0 +1,42 @@
+
+/* about_me start */
+section.about_me{
+  /* temp solution until it is replace with a canvas element */
+  margin-top: 2em;
+}
+
+section.about_me > h2{
+  margin-bottom: 20px;
+}
+
+div.about_me {
+  border:var(--main-color) solid 2px;
+  opacity:.8;
+  background-color: var(--main-color);
+  width: 40em;
+  padding: .5em;
+  line-height:1.7em;
+  box-shadow: 12px 12px 2px 1px #0000ff33;
+}
+
+
+div.about_me > svg{
+  border-radius: 50% 50%;
+  border-style: none;
+  box-shadow: 0 0 0 1px #000;
+  float: left;
+  margin: 10px 30px 30px 10px;
+  opacity: .7;
+}
+
+div.about_me > p{
+  height: 14em;
+}
+
+.about_me > .social_links{
+  display:flex;
+  justify-content: flex-end;
+  gap:1em;
+}
+
+/* about_me end */

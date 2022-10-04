@@ -6,9 +6,9 @@ class Presentation extends Component{
 
   render() {
     const asset= {
-      name: "tree-lanscape",
-      path: "./assets/images/earth-wallpapers.jpg",
-      alt: "tree_landscape",
+      name: "",
+      path: "",
+      alt: "",
     }
 
     return (

@@ -3,10 +3,12 @@
 @import "style-guide.css";
 @import "navbar.css";
 @import "footer.css";
+@import "about_me.css";
 
 .container{
   display: flex;
   flex-flow: column wrap;
+  background:repeating-linear-gradient(black,white);
 }
 
 section{
@@ -20,36 +22,9 @@ section{
 
 
 /* Presentation start */
-.presentation{
-  display: flex;
-  width: 100%;
-  height: 5em;
-}
 
-.presentation img{
-  width: 100%;
-  height: auto;
-}
 /* Presentation end */
 
-/* about_me start */
-div.about_me > p{
-  border:var(--main-color) solid 2px;
-  opacity: .8;
-  background-color: var(--main-color);
-  width: 40em;
-  padding: .5em;
-  line-height:1.7em;
-}
-
-
-.about_me > .social_links{
-  display:flex;
-  justify-content: flex-end;
-  gap:1em;
-}
-
-/* about_me end */
 
 /* contact start */
   /* contact container */
