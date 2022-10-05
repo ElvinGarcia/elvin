@@ -4,6 +4,9 @@
 @import "navbar.css";
 @import "footer.css";
 @import "about_me.css";
+@import "socials.css";
+@import "contact.css";
+
 
 .container{
   display: flex;
@@ -15,72 +18,6 @@ section{
  margin-left: 5%;
 }
 
-.social_links svg{
-  height: 2em;
-  padding:.3em;
- }
 
 
-/* Presentation start */
-
-/* Presentation end */
-
-
-/* contact start */
-  /* contact container */
-.contact{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-}
-
-.contact_me > h2{
-    display: flex;
-    justify-content: center;
-}
-
-.contact_me > form{
-  /* Form outline */
-  margin: 0 auto;
-  width: 400px;
-  padding: 1em;
-}
-
-.contact_me > form li + li {
-  margin-top: 1em;
-}
-
-.contact_me > form label{
-  display: inline-block;
-  width: 90px;
-  text-align: left;
-  margin-right:.3em;
-}
-
-.contact_me > form input, textarea{
-  font: 1em sans-serif;
-  width: 300px;
-  border: 1px solid #999;
-}
-
-.contact_me > form input:focus, textarea:focus{
-  border-color: #000;
-}
-
-.contact_me  textarea {
-  text-align: top;
-  height: 5em;
-}
-
-.contact .button{
-  padding-left: 90px;
-}
-
-.contact button{
-  margin-left: 0.5em;
-  font-size: 1.5em;
-  border-style: none;
-}
-
-/* contact end */
 

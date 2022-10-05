@@ -34,12 +34,13 @@ h1,h2,h3,h4,h5{
 
 a:link{
   text-decoration: none;
-  color:var(--gray)
+  color:var(--font-color)
 }
 
 
 a:link.active {
   text-decoration: none;
-  color: var(--font-color);
+  color: var(--gray);
 }
+
 

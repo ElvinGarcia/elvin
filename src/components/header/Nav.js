@@ -12,7 +12,7 @@ class Nav extends Component {
               type: 'logo',
             src: './assets/images/elvin.svg',
               alt: 'site logo',
-              name: 'Elvin',
+              name: 'Elvin Garcia',
             url: '/',
             svg:<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
               width="50" height="50" viewBox="0 0 900.000000 1000.000000"

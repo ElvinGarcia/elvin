@@ -1,5 +1,7 @@
 
+
 /* about_me start */
+
 section.about_me{
   /* temp solution until it is replace with a canvas element */
   margin-top: 2em;
@@ -22,21 +24,14 @@ div.about_me {
 
 div.about_me > svg{
   border-radius: 50% 50%;
-  border-style: none;
-  box-shadow: 0 0 0 1px #000;
+  border: solid 5px var(--main-color);
   float: left;
   margin: 10px 30px 30px 10px;
-  opacity: .7;
 }
 
 div.about_me > p{
   height: 14em;
-}
-
-.about_me > .social_links{
-  display:flex;
-  justify-content: flex-end;
-  gap:1em;
+  opacity: .9;
 }
 
 /* about_me end */

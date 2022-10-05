@@ -14,7 +14,7 @@ class NavMenu extends Component{
    const navbarLogo = this.props.images.map((obj, id) => {
      return obj.type === "logo" ? <NavLink to={obj.url} alt={obj.alt} className="nav logo" key={id}>
        {obj.svg}
-       <span className="logo">{obj.name}</span>
+       <span className="logo-name">{obj.name}</span>
      </NavLink> : null
    });
 

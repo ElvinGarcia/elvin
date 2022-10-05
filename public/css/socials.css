@@ -1,0 +1,25 @@
+
+
+/*START social link container */
+
+.social_links svg{
+  height: 2.3em;
+  padding:.3em;
+ }
+
+ .social_links svg {
+  opacity:.5;
+ }
+
+ .social_links svg:hover {
+  opacity: 1;
+ }
+
+ .about_me > .social_links{
+  display:flex;
+  justify-content: flex-end;
+  gap:1em;
+}
+
+
+ /*END social link container */
