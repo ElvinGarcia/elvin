@@ -12,21 +12,17 @@ section.about_me > h2{
 }
 
 div.about_me {
-  border:var(--main-color) solid 2px;
-  opacity:.8;
+  /* opacity:.5; */
   background-color: var(--main-color);
   width: 40em;
-  padding: .5em;
+  padding: 1em;
   line-height:1.7em;
-  box-shadow: 12px 12px 2px 1px #0000ff33;
+  box-shadow: 4px 1px 4px 1px var(--gray);
 }
 
-
 div.about_me > svg{
-  border-radius: 50% 50%;
-  border: solid 5px var(--main-color);
   float: left;
-  margin: 10px 30px 30px 10px;
+  margin: 10px 15px 15px 10px;
 }
 
 div.about_me > p{
