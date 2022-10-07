@@ -8,11 +8,11 @@
  }
 
  .social_links svg {
-  opacity:.5;
- }
+   opacity: 1;
+  }
 
- .social_links svg:hover {
-  opacity: 1;
+  .social_links svg:hover {
+   opacity:.5;
  }
 
  .about_me > .social_links{
