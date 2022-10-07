@@ -9,20 +9,23 @@ class Content extends Component{
         <form method="post" name="contact">
           <ul>
             <li>
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">Name
+              </label>
               <input type="text" id="name" name="user_name" />
             </li>
             <li>
-              <label htmlFor="mail">E-mail</label>
+              <label htmlFor="mail">E-mail
+              </label>
               <input type="email" id="mail" name="user_email" />
             </li>
             <li>
-              <label htmlFor="msg">Message</label>
+              <label htmlFor="msg">Message
+              </label>
               <textarea id="msg" name="user_message"></textarea>
             </li>
-            <div className="button">
+            <li className="button">
               <button name="send" type="submit">send</button>
-            </div>
+            </li>
           </ul>
         </form>
       </div>
