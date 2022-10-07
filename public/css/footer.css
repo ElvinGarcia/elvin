@@ -29,6 +29,10 @@ footer{
   column-gap: 2em;
  }
 
+ footer > ul.site_links li:hover a{
+  opacity: .5;
+ }
+
  footer > hr.footer.divider{
   border: 1px var(--gray) solid; /* need to make this fading on both ends*/
   width: 80%;

@@ -49,5 +49,10 @@ nav{
   gap:0 35px;
 }
 
+.nav-menu ul li:hover a{
+ opacity: .5;
+}
+
+
 
 /* Nav menu end */
