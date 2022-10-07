@@ -14,7 +14,7 @@
   background:repeating-linear-gradient(black,white);
 }
 
-section{
+section > * {
  margin-left: 5%;
 }
 

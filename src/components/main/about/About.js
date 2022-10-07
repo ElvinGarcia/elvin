@@ -44,7 +44,7 @@ class About extends Component{
             -41 189 -100 696 -100 857 0 173 32 284 91 321 40 24 127 48 225 61 113 16
             498 6 681 -18z"/>
             </g>
-            </svg>
+          </svg>
            },
         content: {
           type: "about_me",

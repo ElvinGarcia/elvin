@@ -3,8 +3,14 @@
 /* about_me start */
 
 section.about_me{
-  /* temp solution until it is replace with a canvas element */
-  margin-top: 2em;
+margin-top: 2em;   /* temp solution until it is replace with a canvas element */
+
+background: url(../assets/images/skyline.svg) no-repeat center var(--main-color);
+background-size: cover;
+background-position-y:center ;
+background-attachment: scroll;
+background-clip: border-box;
+padding: 100px;
 }
 
 section.about_me > h2{
@@ -18,6 +24,7 @@ div.about_me {
   padding: 1em;
   line-height:1.7em;
   box-shadow: 4px 1px 4px 1px var(--gray);
+  opacity: .7;
 }
 
 div.about_me > svg{
@@ -27,7 +34,6 @@ div.about_me > svg{
 
 div.about_me > p{
   height: 14em;
-  opacity: .9;
 }
 
 /* about_me end */
