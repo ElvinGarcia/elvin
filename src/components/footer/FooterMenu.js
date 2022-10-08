@@ -24,7 +24,7 @@ class FooterMenu extends Component{
       <>
         <div className="footer">{images}</div>
         <ul className="site_links">{site_links}</ul>
-        <hr className="footer divider"></hr>
+        {/* <hr className="footer divider"></hr> */}
         <div className="social_links">{social_links} </div>
         <p className="copyright">All material &#169; Elvin Garcia {fullYear}</p>
       </>
