@@ -33,10 +33,17 @@ div.about_me > image{
   width: 5em;
   height: 5em;
 }
+
 div.about_me > image svg{
   width: 5em;
   height: 5em;
   filter: drop-shadow(0 0 .75rem var(--font-color))
+}
+
+div.about_me > image:hover svg{
+  width: 5em;
+  height: 5em;
+  filter: drop-shadow(5px 10px 1em var(--font-color))
 }
 
 
