@@ -1,0 +1,29 @@
+@keyframes changedrop-shadow {
+  from {
+    filter: drop-shadow(0 0 .75rem var(--red));
+  }
+  to {
+    filter: drop-shadow(0 0 0 var(--red));
+  }
+}
+
+
+.logo > svg{
+  animation-duration: 5.0s;
+  animation-name: changedrop-shadow;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  gap:1em;
+}
+
+/* div {
+  animation-duration: 0.1s;
+  animation-name: changewidth;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+} */
