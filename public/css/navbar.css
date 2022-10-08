@@ -8,13 +8,6 @@
   }
 }
 
-div {
-  animation-duration: 0.1s;
-  animation-name: changewidth;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
 .logo{
   display: flex;
   align-items: center;
@@ -28,10 +21,10 @@ div {
   animation-direction: alternate;
 }
 
-nav{
+/* nav{
   text-transform: uppercase;
 
-}
+} */
 
 
 .nav-menu{
@@ -53,6 +46,12 @@ nav{
  opacity: .5;
 }
 
-
+.logo-name{
+  font-family: sans-serif;
+  font-size: 2em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-weight: 900;
+}
 
 /* Nav menu end */

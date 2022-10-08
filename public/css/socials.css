@@ -5,20 +5,18 @@
 .social_links svg{
   height: 2.3em;
   padding:.3em;
-  margin-top: 2em;
+  opacity: 1;
  }
 
- .social_links svg {
-   opacity: 1;
+   .social_links svg:hover {
+    opacity:.5;
   }
 
-  .social_links svg:hover {
-   opacity:.5;
- }
 
  .about_me > .social_links{
   display:flex;
   justify-content: flex-end;
+  align-content: flex-end;
   gap:1em;
 }
 

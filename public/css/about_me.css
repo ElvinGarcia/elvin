@@ -3,8 +3,6 @@
 /* about_me start */
 
 section.about_me{
-margin-top: 2em;   /* temp solution until it is replace with a canvas element */
-
 background: url(../assets/images/skyline.svg) no-repeat center var(--main-color);
 background-size: cover;
 background-position-y:center ;
@@ -14,26 +12,32 @@ padding: 100px;
 }
 
 section.about_me > h2{
-  margin-bottom: 20px;
+  margin-bottom: .2em;
+  font-size: 1.8em;
 }
 
 div.about_me {
-  /* opacity:.5; */
   background-color: var(--main-color);
-  width: 40em;
+  width: 50%;
   padding: 1em;
   line-height:1.7em;
   box-shadow: 4px 1px 4px 1px var(--gray);
-  opacity: .7;
+  opacity: .6;
+  min-height: 1em;
+  text-align: justify;
 }
 
-div.about_me > svg{
+div.about_me > image{
   float: left;
-  margin: 10px 15px 15px 10px;
+  margin: 10px 2.5em 1px 10px;
+  width: 5em;
+  height: 5em;
+}
+div.about_me > image svg{
+  width: 5em;
+  height: 5em;
+  filter: drop-shadow(0 0 .75rem var(--font-color))
 }
 
-div.about_me > p{
-  height: 14em;
-}
 
 /* about_me end */

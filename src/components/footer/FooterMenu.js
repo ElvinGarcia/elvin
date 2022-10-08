@@ -8,7 +8,7 @@ class FooterMenu extends Component{
     const fullYear = date.getFullYear();
 
     const images = this.props.images.map((obj, id) => {
-      return obj.type === "logo" ? <NavLink to={obj.url} alt={obj.alt} key={id} className="footer-logo">{obj.svg}</NavLink> : null
+      return obj.type === "logo" ? <NavLink to={obj.url} alt={obj.alt} key={id} className="logo">{obj.svg}</NavLink> : null
     });
 
     const site_links = this.props.site_links.map((obj, id) => {
@@ -22,11 +22,11 @@ class FooterMenu extends Component{
     );
     return (
       <>
-        <div className="logo footer">{images}</div>
+        <div className="footer">{images}</div>
         <ul className="site_links">{site_links}</ul>
         <hr className="footer divider"></hr>
-        <p className="copyright">All material &#169; Elvin Garcia {fullYear}</p>
         <div className="social_links">{social_links} </div>
+        <p className="copyright">All material &#169; Elvin Garcia {fullYear}</p>
       </>
     )
   }

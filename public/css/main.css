@@ -1,6 +1,7 @@
 @import "reset.css";
 @import "variables.css";
 @import "style-guide.css";
+@import "logo.css";
 @import "navbar.css";
 @import "footer.css";
 @import "about_me.css";
@@ -11,7 +12,7 @@
 .container{
   display: flex;
   flex-flow: column wrap;
-  background:repeating-linear-gradient(black,white);
+  /* background:repeating-linear-gradient(black,white); */
 }
 
 
