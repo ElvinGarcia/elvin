@@ -8,7 +8,6 @@ class Main extends Component{
   render() {
     return (
       <>
-        {/* <Presentation/> */}
         <About />
         <Contact />
       </>

@@ -1,6 +1,10 @@
 import React from 'react';
 import { Routes, Route } from "react-router-dom";
-import Layout from './containers/Layout'
+import Layout from './containers/Layout';
+import Projects from './components/projects/Projects';
+import Main from './components/main/Main';
+// import Speaking from './components/speaking/Speaking';
+// import Writing from './components/writing/Writing';
 
 
 
@@ -10,9 +14,11 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route path="/Writing" element={"under construction" }/>
-          <Route path="/Speaking" element={"under construction" }/>
-          <Route path="/Projecta" element={"under construction" }/>
+          <Route index element={<Main/>}/>
+          <Route path="/Projects" element={<Projects/>}/>
+          {/* <Route path="/Writing" element={Writing }/> */}
+          {/* <Route path="/Speaking" element={Speaking}/> */}
+        <Route path="*" element={<h1>~~Nothing to see here ~~</h1> }/>
         </Route>
       </Routes>
     </>
