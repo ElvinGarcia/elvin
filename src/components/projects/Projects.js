@@ -1,16 +1,16 @@
 import React, { Component } from "react"
 import Github from "./github/Github";
-// import Codepen from "./codepen/Codepen";
+import Codepen from "./codepen/Codepen";
 import PageTitle from "./page_title/PageTitle";
 
 class Projects extends Component{
   render() {
     return (
-      <section className="Projects">
-        <PageTitle />
+      <main className="main_projects">
+        <PageTitle name={"Projects"} />
         <Github />
-        {/* <Codepen /> */}
-      </section>
+        <Codepen />
+      </main>
     )
   }
 }

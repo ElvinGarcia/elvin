@@ -34,9 +34,10 @@ export default function Github() {
   );
 
   return (
-      <section className="github">
-        {content}
-      </section>
+    <section className="github">
+      <h2>GitHub</h2>
+      {content}
+    </section>
     )
 
 }

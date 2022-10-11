@@ -1,14 +1,13 @@
 import React  from "react";
-import { NavLink } from "react-router-dom";
 
-const Content = () => {
+const Content = (props) => {
 
   return (
-    <div className="project_list">
-      <h3> {this.props.project.title} </h3>
-      <p> {this.props.description} </p>
-      <NavLink to={this.props.project.url}>See Pen</NavLink>
-      <code>Preview goes here</code>
+    <div className="codepen_pen">
+       <h3>{props.title}</h3>
+        <p>{props.description}</p>
+        <a href="props.url"> See Pen</a>
+        {props.snippet}
     </div>
 )
 
