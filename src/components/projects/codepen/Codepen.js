@@ -6,7 +6,7 @@ export default function Codepen() {
   const pens = [{
     title: 'Analog Clock',
     snippet: <iframe height="400" width="100%" scrolling="no" title="Analog Clock"
-      src="https://codepen.io/elvingarcia/embed/RwGmjbB?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+      src="https://codepen.io/elvingarcia/embed/RwGmjbB?default-tab=html%2Cresult" frameBorder="no" loading="lazy" allowtransparency={true.toString()} allowFullScreen={true}>
     See Pen <a href="https://codepen.io/elvingarcia/pen/RwGmjbB">
     Analog Clock</a> by Elvin (<a href="https://codepen.io/elvingarcia">@elvingarcia</a>)
     on <a href="https://codepen.io">CodePen</a>.
@@ -19,7 +19,7 @@ export default function Codepen() {
     title: 'Speed Typing',
     snippet:
       <iframe height="400" width="100%" scrolling="no" title="Speed Typing"
-        src="https://codepen.io/elvingarcia/embed/abBOgzj?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+        src="https://codepen.io/elvingarcia/embed/abBOgzj?default-tab=html%2Cresult" frameBorder="no" loading="lazy" allowtransparency={true.toString()} allowFullScreen={true}>
   See Pen <a href="https://codepen.io/elvingarcia/pen/abBOgzj">
   Speed Typing</a> by Elvin (<a href="https://codepen.io/elvingarcia">@elvingarcia</a>)
   on <a href="https://codepen.io">CodePen</a>.
