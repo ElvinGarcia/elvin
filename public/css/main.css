@@ -4,9 +4,10 @@
 @import "logo.css";
 @import "navbar.css";
 @import "footer.css";
-@import "about_me.css";
+@import "./main_page/about_me.css";
+@import "./main_page/contact.css";
+@import "./project_page/main.css";
 @import "socials.css";
-@import "contact.css";
 
 
 .container{

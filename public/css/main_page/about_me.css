@@ -3,7 +3,7 @@
 /* about_me start */
 
 section.about_me{
-background: url(../assets/images/skyline.svg) no-repeat center var(--main-color);
+background: url(../../assets/images/skyline.svg) no-repeat center var(--main-color);
 background-size: cover;
 background-position-y:center ;
 background-attachment: scroll;

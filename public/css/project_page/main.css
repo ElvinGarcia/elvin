@@ -1,0 +1,23 @@
+
+.main_projects{
+  display: grid;
+  grid-gap: 8vmin;
+  grid-template-columns: 1fr 2fr 2fr;
+  height: 100%;
+  margin: 8vmin;
+border: red solid 2px;
+}
+
+.main_projects .heading{
+  position: fixed;
+}
+
+.main_projects .heading > h1{
+  position: absolute;
+  transform: rotate(90deg);
+  left: 80px;
+  top: 0;
+  transform-origin: 0 0;
+  font-size: 10vmin;
+
+}
