@@ -31,6 +31,10 @@
   margin: 0;
 }
 
+.codepen.pen{
+  margin-bottom: 4em;
+}
+
 .main_projects section.codepen >  h2 , .main_projects section.github > h2{
  text-transform: uppercase;
  font-size: 2em;
@@ -39,33 +43,33 @@
  font-weight: 500;
 }
 
-.main_projects section.codepen div.codepen_pen  h3 , .main_projects section.github .project_list >a .project.title{
+.main_projects section.codepen div.codepen.pen h3.title , .main_projects section.github .project_list >a .project.title{
   margin-top: .7em;
   font-size: 1.5em;
   text-transform: uppercase;
   padding-bottom:5px;
   font-weight: 500;
   color: #dcdbdb;
-
-
 }
 
-.main_projects section.codepen div.codepen_pen p, .main_projects section.github .project_list >a > .project.description {
+.main_projects section.codepen div.codepen.pen p.description, .main_projects section.github .project_list >a > .project.description {
   /* margin: .5em 0; */
   color: var(--light-gray);
   font-size: 18px;
+  text-align: justify;
 }
-.main_projects section.codepen div.codepen_pen a{
+
+.main_projects section.codepen div.codepen.pen a{
   color:var(--font-color);
   text-decoration: none;
   background-color: transparent;
 
 }
 
-.main_projects section.codepen div.codepen_pen a > button{
-  border: 1px solid red;
+.main_projects section.codepen div.codepen.pen a > button{
+  border: 1px solid #ec633a;
   margin: 15px 0;
-  color:red;
+  color:#ec633a;
   background-color: var(--main-color);
   border-radius: 1000px 1000px;
   padding: 10px;
@@ -76,9 +80,9 @@
   font-size: 13px;
 }
 
-.main_projects section.codepen div.codepen_pen a > button:hover{
+.main_projects section.codepen div.codepen.pen a > button:hover{
   transition: all .15s ease-in-out;
-  background-color: red;
+  background-color: #ec633aed;
   color: white;
 }
 
