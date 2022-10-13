@@ -5,7 +5,6 @@
   grid-template-columns: 1fr 2fr 2fr;
   height: 100%;
   margin: 8vmin;
-border: red solid 2px;
 }
 
 .main_projects .heading{
@@ -19,5 +18,97 @@ border: red solid 2px;
   top: 0;
   transform-origin: 0 0;
   font-size: 10vmin;
+}
+
+
+/* codepen start */
+
+.main_projects section.codepen{
+  grid-column: 2/3;
+  grid-row:1; /* ?*/
+  font-size: 18px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.main_projects section.codepen >  h2 , .main_projects section.github > h2{
+ text-transform: uppercase;
+ font-size: 2em;
+ margin:0;
+ font-family: Gotham XNarrow A,Gotham XNarrow B,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+ font-weight: 500;
+}
+
+.main_projects section.codepen div.codepen_pen  h3 , .main_projects section.github .project_list >a .project.title{
+  margin-top: .7em;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  padding-bottom:5px;
+  font-weight: 500;
+  color: #dcdbdb;
+
 
 }
+
+.main_projects section.codepen div.codepen_pen p, .main_projects section.github .project_list >a > .project.description {
+  /* margin: .5em 0; */
+  color: var(--light-gray);
+  font-size: 18px;
+}
+.main_projects section.codepen div.codepen_pen a{
+  color:var(--font-color);
+  text-decoration: none;
+  background-color: transparent;
+
+}
+
+.main_projects section.codepen div.codepen_pen a > button{
+  border: 1px solid red;
+  margin: 15px 0;
+  color:red;
+  background-color: var(--main-color);
+  border-radius: 1000px 1000px;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-size: 13px;
+}
+
+.main_projects section.codepen div.codepen_pen a > button:hover{
+  transition: all .15s ease-in-out;
+  background-color: red;
+  color: white;
+}
+
+/* codepen end */
+
+/*github start */
+.main_projects section.github{
+  grid-column: 3;
+}
+
+.main_projects section.github .project_list{
+  text-align: left;
+  padding:.2em;
+  border-bottom: solid #696767 1px;
+}
+
+.main_projects section.github .project_list:hover{
+  transition: all .15s ease;
+  background-color: #ffffff0d;
+}
+
+.main_projects section.github .project_list .project.language{
+  display: inline-block;
+  border:solid white 1px;
+  border-radius: 1000px 1000px;
+  margin:.4em .2em .2em .2em;
+  padding:5px;
+  font-size: 13px;
+  opacity: .7;
+  text-transform:capitalize;
+}
+
+/*github end */

@@ -30,6 +30,7 @@ export default function Github() {
       url={obj.link}
       key={id}
       languages={obj.language}
+      // languages={["ruby","javascript", "react"]}
     />
   );
 

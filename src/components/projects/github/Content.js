@@ -4,20 +4,23 @@ import React from "react";
 
 const Content = (props) => {
 
-  return (
+  const languageSet = () => {
+     if(Array.isArray(props.languages) && props.languages.length > 0) {
+       return props.languages.map((language) => <span className="project language">{language}</span> )
+     } else {
+      return <span className="project language"> {props.languages} </span>
+    }
+  };
 
+  return (
     <div className="project_list">
       <a target="_blank" rel="noreferrer" href={props.url}>
 
-        <h3> {props.title} </h3>
-          <p> ☆ {props.start_count} </p>
-        <p> {props.description} </p>
-        <span>
-          {/* returns the languages set on the repo */}
-          {Array.isArray(props.languages) && props.languages > 0 ? props.languages.forEach((lang) => { return (lang + ', ') }) : props.languages }
-        </span>
+        <h3 className="project title"> {props.title} </h3>
+          <p className="project star_count"> ☆ {props.start_count} </p>
+        <p className="project description"> {props.description} </p>
+         {languageSet()}
       </a>
-      <hr/>
     </div>
 )
 
@@ -25,3 +28,4 @@ const Content = (props) => {
 
 
 export default Content;
+
