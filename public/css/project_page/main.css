@@ -91,7 +91,7 @@
 
 .main_projects section.github .project_list{
   text-align: left;
-  padding:.2em;
+  padding-bottom:.5em;
   border-bottom: solid #696767 1px;
 }
 

@@ -6,7 +6,7 @@ const Content = (props) => {
     <div className="codepen_pen">
        <h3>{props.title}</h3>
         <p>{props.description}</p>
-      <a href="props.url"> <button> See Pen </button> </a>
+      <a href={props.url} target="_blank" rel="noreferrer"> <button> See Pen </button> </a>
         {props.snippet}
     </div>
 )
