@@ -38,13 +38,10 @@
   gap:0 35px;
 }
 
-.nav-menu ul li:hover a{
+.nav-menu ul li:hover a , .nav-menu ul .active{
  opacity: .5;
 }
 
-.nav-menu ul .active{
-  text-decoration: underline;
-}
 
 .logo-name{
   font-family: sans-serif;
