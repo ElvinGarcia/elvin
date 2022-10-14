@@ -2,23 +2,11 @@
 .main_projects{
   display: grid;
   grid-gap: 8vmin;
-  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-columns: var(--gtcolumns-3);
   height: 100%;
   margin: 8vmin;
 }
 
-.main_projects .heading{
-  position: fixed;
-}
-
-.main_projects .heading > h1{
-  position: absolute;
-  transform: rotate(90deg);
-  left: 80px;
-  top: 0;
-  transform-origin: 0 0;
-  font-size: 10vmin;
-}
 
 
 /* codepen start */
@@ -39,7 +27,7 @@
  text-transform: uppercase;
  font-size: 2em;
  margin:0;
- font-family: Gotham XNarrow A,Gotham XNarrow B,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+ font-family:var(--nice-fonts);
  font-weight: 500;
 }
 
