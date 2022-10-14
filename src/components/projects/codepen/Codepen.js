@@ -5,7 +5,7 @@ export default function Codepen() {
 
   const pens = [{
     title: 'Analog Clock',
-    snippet: <iframe height="300" width="100%;" scrolling="no" title="Analog Clock" src="https://codepen.io/elvingarcia/embed/RwGmjbB" frameBorder="no" loading="lazy" allowtransparency={true} allowFullscreen={true}>
+    snippet: <iframe height="300" width="100%;" scrolling="no" title="Analog Clock" src="https://codepen.io/elvingarcia/embed/RwGmjbB" frameBorder="no" loading="lazy" allowtransparency="true" allowFullScreen= {true}>
     See the Pen <a href="https://codepen.io/elvingarcia/embed/RwGmjbB">
     Analog Clock</a> by Elvin (<a href="https://codepen.io/elvingarcia">@elvingarcia</a>)
     on <a href="https://codepen.io">CodePen</a>.
@@ -17,7 +17,7 @@ export default function Codepen() {
   {
     title: 'Speed Typing',
     snippet:
-    <iframe height="300" width="100%;" scrolling="no" title="Speed Typing" src="https://codepen.io/elvingarcia/embed/abBOgzj?default-tab=" frameBorder="no" loading="lazy" allowtransparency={true} allowFullscreen={true}>
+    <iframe height="300" width="100%;" scrolling="no" title="Speed Typing" src="https://codepen.io/elvingarcia/embed/abBOgzj?default-tab=" frameBorder="no" loading="lazy" allowtransparency="true" allowFullScreen= {true}>
     See the Pen <a href="https://codepen.io/elvingarcia/pen/abBOgzj">
     Speed Typing</a> by Elvin (<a href="https://codepen.io/elvingarcia">@elvingarcia</a>)
     on <a href="https://codepen.io">CodePen</a>.
