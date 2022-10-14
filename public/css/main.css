@@ -7,6 +7,8 @@
 @import "./main_page/about_me.css";
 @import "./main_page/contact.css";
 @import "./project_page/main.css";
+@import "./writing_page/main.css";
+@import "side_heading.css";
 @import "socials.css";
 
 
