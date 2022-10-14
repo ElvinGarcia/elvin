@@ -1,0 +1,13 @@
+
+section.heading{
+  position: fixed;
+}
+
+section.heading > h1{
+position: absolute;
+transform: rotate(90deg);
+left: 80px;
+top: 0;
+transform-origin: 0 0;
+font-size: 10vmin;
+}
