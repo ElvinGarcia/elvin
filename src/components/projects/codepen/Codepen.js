@@ -26,18 +26,6 @@ export default function Codepen() {
     id: 'abBOgzj',
     description:'This is a typing test. Your goal is to duplicate the provided text, EXACTLY, in the field below. The timer starts when you start typing, and only stops when you match this text exactly',
     },
-    {
-      title: 'CSS ART',
-    snippet:
-    <iframe height="300" width= "100%" scrolling="no" title="A Simple CSS Art" src="https://codepen.io/elvingarcia/embed/abGmwBp?" frameborder="0" loading="lazy" allowtransparency={true} allowFullscreen={true}>
-    See the Pen <a href="https://codepen.io/elvingarcia/pen/abGmwBp">
-    A Simple CSS Art</a> by Elvin (<a href="https://codepen.io/elvingarcia">@elvingarcia</a>)
-    on <a href="https://codepen.io">CodePen</a>.
-        </iframe>,
-    url:'https://codepen.io/elvingarcia/full/abGmwBp',
-    id: 'abGmwBp',
-    description:'Simple CSS Art',
-    },
 
   ]
 
