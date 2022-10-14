@@ -7,7 +7,8 @@ export default function Writing() {
 
   useEffect(
     () => {
-      const url = '';
+      // repo list content
+      const url = 'https://api.github.com/repositories/95937718/contents/technical_blog/_posts';
       const getData = async () => {
         try {
           const resp = await fetch(url);
@@ -21,7 +22,12 @@ export default function Writing() {
     }
     , []);
 
-  const content = data.map( (obj,id) => < Content /> );
+  const content = data.map((obj, id) => < Content
+    title={obj.name}
+    url={obj.download_url}
+    key={id}
+  />);
+
   return (
     <section className="technical writing">
       <h2>Technical Writing</h2>
