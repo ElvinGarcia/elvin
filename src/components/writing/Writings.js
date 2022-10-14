@@ -5,10 +5,9 @@ import PageTitle from "../page_title/PageTitle";
 class Writings extends Component{
   render() {
     return (
-      <main className="main_projects">
+      <main className="main_writings">
         <PageTitle name={"Writing"} />
         <Writing />
-        <h1>Test Page</h1>
       </main>
     )
   }

@@ -1,10 +1,8 @@
 import React from "react";
 const Content = (props) => {
-  return (
-    <div className="writing list">
+  return (<div className="writing container">
 
-  </div>
-  )
+  </div>)
 }
 
 

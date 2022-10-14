@@ -1,0 +1,24 @@
+
+.main_writings{
+  display: grid;
+  grid-gap: 8vmin;
+  grid-template-columns: var(--gtcolumns-3);
+  height: 100%;
+  margin: 8vmin;
+}
+
+.main_writings section.technical.writing{
+  grid-column: 3;
+}
+
+
+.main_writings section.technical.writing .writing.list{
+  text-align: left;
+  padding-bottom:.5em;
+  border-bottom: solid #696767 1px;
+}
+
+.main_writings section.technical.writing .project_list:hover{
+  transition: all .15s ease;
+  background-color: #ffffff0d;
+}
