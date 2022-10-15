@@ -22,9 +22,26 @@ export default function Writing() {
     }
     , []);
 
-  const content = data.map((obj, id) => < Content
-    title={obj.name}
-    url={obj.download_url}
+
+    const posts = data.map( obj => {
+      const post = {}
+      const body = atob(obj.content)
+      const content = body.split("---\n")[2];
+      post["content"] = content;
+      const header = body.substring(content.indexOf("---") + 3, content.lastIndexOf("---"));
+      const headerValues = header.split("\n");
+      headerValues.forEach((a,k)=>{ if(a !== "--" && !!a){post[a.split(":")[0]]=a.split(":")[1];}});
+      return post;
+     }
+    )
+
+
+
+
+  const content = posts.map((obj, id) => < Content
+    title={obj.title}
+    content={obj.content}
+    url="about.com"
     key={id}
   />);
 
