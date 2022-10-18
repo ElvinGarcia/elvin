@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react"
+import ContentList from "./ContentList";
 import Content from "./Content";
 
 
@@ -70,15 +71,20 @@ export default function Writing() {
     console.log(data)
 
   const content = data.map(
-    obj => <Content key={obj.date} {...obj} />
+    obj => <ContentList key={obj.date} {...obj} />
   );
 
 
   return (
+    <>
     <section className="technical writing">
-      <h2>Technical Writing</h2>
-      {content}
+        <h2>Technical Writing</h2>
+        {content}
     </section>
+    <section className="technical writing content">
+      <Content/>
+    </section>
+  </>
     )
 
 
