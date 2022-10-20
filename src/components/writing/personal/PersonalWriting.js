@@ -24,7 +24,7 @@ export default function Writing() {
   const content = data.map( (obj,id) => < Content /> );
   return (
     <section className="technical writing">
-      <h2>Technical Writing</h2>
+      <h2>Personal Writing</h2>
       {content}
     </section>
     )

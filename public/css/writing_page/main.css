@@ -6,12 +6,16 @@
   height: 100%;
   margin: 8vmin;
 }
-
 /* end of main containter */
 
 /* start of List */
-.main_writings section.technical.writing{
+
+section.technical.writing.list{
   grid-column: 3;
+  font-size: 18px;
+  box-sizing: border-box;
+  margin: 0;
+  border:green solid 1px;
 }
 
 .main_writings section.technical.writing .writing.list{
@@ -26,10 +30,9 @@
   cursor: pointer;
 }
 
- .title.post{
-  text-transform: capitalize;
+ .title.post{ text-transform: capitalize; }
 
-}
+
 
 /* End of List */
 
@@ -40,6 +43,10 @@ grid-column: 2;
   font-size: 18px;
   box-sizing: border-box;
   margin: 0;
+}
+
+section.technical.writing.content{
+  border:red solid 1px;
 }
 
 

@@ -1,13 +1,15 @@
 import React, { Component } from "react";
-import Writing from "./technical/Writing";
 import PageTitle from "../page_title/PageTitle";
+import TechnicalWriting from "./technical/TechnicalWriting";
 
 class Writings extends Component{
+
   render() {
     return (
       <main className="main_writings">
         <PageTitle name={"Writing"} />
-        <Writing />
+        <TechnicalWriting />
+
       </main>
     )
   }
@@ -15,3 +17,6 @@ class Writings extends Component{
 
 
 export default Writings;
+
+
+
