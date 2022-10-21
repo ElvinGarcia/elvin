@@ -90,11 +90,11 @@ export default function TechnicalWriting(){
 
   //   },)
 
-  const [contentData, setContentData] = useState( { toggle: false, data: "", });
+  const [contentData, setContentData] = useState( { toggle: false, post: "", });
 
 
   const handleContent = (obj) => {
-    setContentData(() => ({ ...contentData, data: obj }));
+    setContentData(() => ({ ...contentData, post: obj }));
 }
 
 
