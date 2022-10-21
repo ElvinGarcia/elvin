@@ -9,7 +9,7 @@ import rehypeRaw from 'rehype-raw';
 const Content = (props) => {
   return (
     <section className="technical writing content">
-      <h2>{props.post.title}</h2>
+      <h2 className="technical writing content title">{props.post.title}</h2>
        <div className="writing content ">
         <ReactMarkdown remarkPlugins={[gfm]} rehypePlugins={[rehypeRaw]} >
           {props.post.content}

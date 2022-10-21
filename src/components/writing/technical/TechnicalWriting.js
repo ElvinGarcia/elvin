@@ -106,7 +106,7 @@ export default function TechnicalWriting(){
   return (
     <>
    <section className="technical writing list">
-    <h2>Technical Writing</h2>
+    <h2 className=" technical writing title">Technical Writing</h2>
         {contentList}
       </section>
       <Content {...contentData} />

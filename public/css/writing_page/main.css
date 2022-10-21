@@ -16,11 +16,13 @@ section.technical.writing.list{
   font-size: 18px;
   box-sizing: border-box;
   margin: 0;
+  min-height: 90vh;
 }
 
 .main_writings section.technical.writing .writing.list{
   text-align: left;
   padding-bottom:.5em;
+  margin:.7em;
   border-bottom: solid #696767 1px;
 }
 
@@ -32,25 +34,94 @@ section.technical.writing.list{
 
  .title.post{ text-transform: capitalize; }
 
-
-
 /* End of List */
 
 /* start of content */
+
 section.technical.writing.content{
 grid-column: 2;
-  grid-row:1;
-  font-size: 18px;
-  box-sizing: border-box;
-  margin: 0;
+grid-row:1;
+box-sizing: border-box;
+margin: 0;
+min-height: 90vh;
+border-radius: 3%;
 }
 
-/* section.technical.writing.content{
+.writing.content.title{
+  font-weight: 400;
+  font-size: 1.8em;
+  color: var(--font-color);
+  text-transform: capitalize;
+  margin: 0;
+  padding:0;
 
-} */
+}
+
+/* start formating text for readabilty */
+.writing.content{
+  text-align: justify;
+  line-height: 1.9em;
+  font-size: 1.1em;
+  padding: 0 .8em;
+  overflow: auto;
+}
 
 
 
+.writing.content p {
+  line-height: calc(1ex / 0.32);
+}
 
+.writing.content h1 {
+  font-size: 2.5em;
+  line-height: calc(1ex / 0.42);
+  margin: calc(1ex / 0.42) 0;
+}
+
+.writing.content h2 {
+  font-size: 2em;
+  line-height: calc(1ex / 0.42);
+  margin: calc(1ex / 0.42) 0;
+}
+
+.writing.content h3 {
+  font-size: 1.75em;
+  line-height: calc(1ex / 0.38);
+  margin: calc(1ex / 0.38) 0;
+}
+
+.writing.content h4 {
+  font-size: 1.5em;
+  line-height: calc(1ex / 0.37);
+  margin: calc(1ex / 0.37) 0;
+}
+
+.writing.content p {
+  font-size: 1em;
+  line-height: calc(1ex / 0.32);
+  margin: calc(1ex / 0.32) 0;
+}
+
+.writing.content {
+  --red: 230;
+  --green: 230;
+  --blue: 230;
+  --aa-brightness: calc(( (var(--red) * 299) + (var(--green) * 587) + (var(--blue) * 114)) / 1000);
+  --aa-brightness: calc(((var(--red) * 299) + (var(--green) * 587) + (var(--blue) * 114) ) / 1000);
+  --aa-color: calc((var(--aa-brightness) - 128) * -1000);
+  background: rgb(var(--red), var(--green), var(--blue));
+  color: rgb(var(--aa-color), var(--aa-color), var(--aa-color));
+}
+
+@media (prefers-color-scheme: dark) {
+  .writing.content {
+      --red: 30;
+      --green: 30;
+      --blue: 30;
+  }
+}
+/* end formating text for readabilty */
 
 /* end of content */
+
+
