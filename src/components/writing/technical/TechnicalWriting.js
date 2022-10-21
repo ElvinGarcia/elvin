@@ -3,15 +3,33 @@ import ContentList from "./ContentList";
 import Content from "./Content";
 
 
+
+
 export default function TechnicalWriting(){
 
 
   //  data = [{},{}]
   const data = [
     {
-    "title": "About Coding",
+      title: "sample",
     "layout": "post",
     "date": "'2016-11-03T20:50:00.001-07:00'",
+    "author": "EG",
+    "tags": "[]",
+    "modified_time": '2018-71-23T20:52:16.529-02:01',
+    "blogger_id": "tag:blogger.com,1999:blog-4347820558803353276.post-5922369531838206430",
+    "blogger_orig_url": "http://blog.elvingarcia.com/2016/11/what-coding-is-all-about.html",
+      content: `\n
+# Table of Content \n
+## [Prototype-base Programming](#prototype-base-programming) \n
+## [Interpreted Language](#interpreted-language) \n
+<hr>
+      `
+    },
+    {
+    "title": "About Coding",
+    "layout": "post",
+    "date": '2016-11-03T20:50:00.001-07:00',
     "author": "EG",
     "tags": "[]",
     "modified_time": "'2016-11-03T20:59:16.599-07:00'",
@@ -25,7 +43,7 @@ export default function TechnicalWriting(){
     "date": "'2016-11-04T11:18:00.005-07:00'",
     "author": "EG",
     "tags": "",
-    "modified_time": "'2016-11-04T11:21:25.032-07:00'",
+    "modified_time": "2016-11-04T11:21:25.032-07:00",
     "blogger_id": "tag:blogger.com,1999:blog-4347820558803353276.post-452249001107208178",
     "blogger_orig_url": "http://blog.elvingarcia.com/2016/11/one-building-block-at-time.html",
     "content": "\n<br />At the very core of every programmer lays an indispensable skill that is hard to quantify or expressed in few words. That skill is within the ability to read, write and learn at the consistent pace of that which mimics technology, which is constantly.<br />The best way I approach this requirement is by first choosing a technology or language of interest. Being interested in what you choose is very important since it is whats going to keep you motivated when your spirits are down and there is no way out.<br />The second part is to dissect the subject matter into its most basic component and learn that very very well. Similar to math in elementary. You fist learn to count and the logic behind counting up to 10. Using the knowledge gain from learning the basics will help you master the next level of mastery in the subject field making the entire process a catapult effect. Mean while practicing every step of the way what was learn in order to solidify the retention of the knowledge gained.<br /><br />This is just my simple way of learning and mastery new subjects.<br /><br />"
@@ -90,8 +108,8 @@ export default function TechnicalWriting(){
    <section className="technical writing list">
     <h2>Technical Writing</h2>
         {contentList}
-    </section>
-    <Content {...contentData} />
+      </section>
+      <Content {...contentData} />
   </>
     )
 

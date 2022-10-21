@@ -2,7 +2,8 @@
 .main_writings{
   display: grid;
   grid-gap: 8vmin;
-  grid-template-columns: var(--gtcolumns-3);
+  /* this need to change to restrict the middle column from expanding too much AND shrinking too much */
+  grid-template-columns:  1fr minmax(0, 3fr) 2fr;
   height: 100%;
   margin: 8vmin;
 }
@@ -15,7 +16,6 @@ section.technical.writing.list{
   font-size: 18px;
   box-sizing: border-box;
   margin: 0;
-  border:green solid 1px;
 }
 
 .main_writings section.technical.writing .writing.list{
@@ -45,9 +45,9 @@ grid-column: 2;
   margin: 0;
 }
 
-section.technical.writing.content{
-  border:red solid 1px;
-}
+/* section.technical.writing.content{
+
+} */
 
 
 

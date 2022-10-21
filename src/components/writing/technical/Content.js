@@ -1,14 +1,19 @@
-import React from "react"
+import React from "react";
+import ReactMarkdown from 'react-markdown';
+import gfm from 'remark-gfm';
+import rehypeRaw from 'rehype-raw';
+
 
 
 
 const Content = (props) => {
- console.log("inside Content props,",props)
   return (
     <section className="technical writing content">
       <h2>Content</h2>
        <div className="writing content ">
-        <p>{props.data.content}</p>
+        <ReactMarkdown remarkPlugins={[gfm]} rehypePlugins={[rehypeRaw]} >
+          {props.data.content}
+        </ReactMarkdown>
       </div>
     </section>
 
