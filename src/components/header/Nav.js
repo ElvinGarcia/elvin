@@ -57,8 +57,8 @@ class Nav extends Component {
             },
           {
             type:'site_links',
-              name: 'Speaking',
-              url: 'Speaking'
+              name: 'Resume',
+              url: 'Resume'
             },
           {
             type:'site_links',

@@ -4,7 +4,7 @@ import Layout from './containers/Layout';
 import Projects from './components/projects/Projects';
 import Main from './components/main/Main';
 import Writing from './components/writing/Writings';
-// import Speaking from './components/speaking/Speaking';
+import Resume from './components/resume/Resume';
 
 
 
@@ -17,7 +17,7 @@ function App() {
           <Route index element={<Main/>}/>
           <Route path="/Projects" element={<Projects/>}/>
           <Route path="/Writing" element={<Writing/> }/>
-          {/* <Route path="/Speaking" element={Speaking}/> */}
+          <Route path="/Resume" element={Resume}/>
         <Route path="*" element={<h1>~~Nothing to see here ~~</h1> }/>
         </Route>
       </Routes>
