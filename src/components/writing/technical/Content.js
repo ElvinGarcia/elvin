@@ -7,6 +7,7 @@ import rehypeRaw from 'rehype-raw';
 
 
 const Content = (props) => {
+
   return (
     <section className="technical writing content">
       <h2 className="technical writing content title">{props.post.title}</h2>

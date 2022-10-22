@@ -11,7 +11,7 @@ export default function TechnicalWriting(){
   //  data = [{},{}]
 //   const data = [
 //     {
-//       title: "sample",
+//     "title": "sample",
 //     "layout": "post",
 //     "date": "'2016-11-03T20:50:00.001-07:00'",
 //     "author": "EG",
@@ -19,7 +19,7 @@ export default function TechnicalWriting(){
 //     "modified_time": '2018-71-23T20:52:16.529-02:01',
 //     "blogger_id": "tag:blogger.com,1999:blog-4347820558803353276.post-5922369531838206430",
 //     "blogger_orig_url": "http://blog.elvingarcia.com/2016/11/what-coding-is-all-about.html",
-//       content: `\n
+//     "content": `\n
 // # Table of Content \n
 // ## [Prototype-base Programming](#prototype-base-programming) \n
 // ## [Interpreted Language](#interpreted-language) \n
@@ -50,8 +50,8 @@ export default function TechnicalWriting(){
 //   }
 // ]
 
-  const [data, setData] = useState([]);
-  const [contentData, setContentData] = useState({ toggle: false, post: "", });
+const [contentData, setContentData] = useState({ toggle: false, post: "", });
+const [data, setData] = useState([]);
 
   useEffect(
      () => {
