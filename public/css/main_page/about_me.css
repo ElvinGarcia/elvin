@@ -4,11 +4,15 @@
 
 section.about_me{
 /* background: url(../../assets/images/skyline.svg) no-repeat center var(--main-color); */
-background-size: cover;
-background-position-y:center ;
-background-attachment: scroll;
-background-clip: border-box;
+/* background-size: cover; */
+/* background-position-y:center ; */
+/* background-attachment: scroll; */
+/* background-clip: border-box; */
 padding: 100px;
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+
 }
 
 section.about_me > h2{

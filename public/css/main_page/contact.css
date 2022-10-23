@@ -4,11 +4,11 @@
   section.contact{
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-end;
+    justify-content: center;
     /* background: url(../../assets/images/fern.svg) no-repeat center var(--main-color); */
-    background-position: center;
-    background-clip: border-box;
-    background-size: cover;
+    /* background-position: center; */
+    /* background-clip: border-box; */
+    /* background-size: cover; */
     padding: 100px;
     }
 
