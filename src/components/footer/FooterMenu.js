@@ -8,7 +8,9 @@ class FooterMenu extends Component{
     const fullYear = date.getFullYear();
 
     const images = this.props.images.map((obj, id) => {
-      return obj.type === "logo" ? <NavLink to={obj.url} alt={obj.alt} key={id} className="logo">{obj.svg}</NavLink> : null
+      return obj.type === "logo" ? <NavLink to={obj.url} alt={obj.alt} key={id} className="logo">
+       <img src={obj.src} alt={obj.alt} />
+      </NavLink> : null
     });
 
     const site_links = this.props.site_links.map((obj, id) => {

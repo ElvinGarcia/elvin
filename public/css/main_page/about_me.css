@@ -3,7 +3,7 @@
 /* about_me start */
 
 section.about_me{
-background: url(../../assets/images/skyline.svg) no-repeat center var(--main-color);
+/* background: url(../../assets/images/skyline.svg) no-repeat center var(--main-color); */
 background-size: cover;
 background-position-y:center ;
 background-attachment: scroll;
@@ -27,20 +27,21 @@ div.about_me {
   text-align: justify;
 }
 
-div.about_me > image{
+div.about_me > img{
   float: left;
   margin: 10px 2.5em 1px 10px;
   width: 5em;
   height: 5em;
 }
 
-div.about_me > image svg{
+div.about_me > img{
   width: 5em;
   height: 5em;
-  filter: drop-shadow(0 0 .75rem var(--font-color))
+  filter: drop-shadow(0 0 .75rem var(--font-color));
+
 }
 
-div.about_me > image:hover svg{
+div.about_me > img:hover{
   width: 5em;
   height: 5em;
   filter: drop-shadow(5px 10px 1em var(--font-color))

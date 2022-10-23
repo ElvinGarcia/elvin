@@ -5,7 +5,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
-    background: url(../../assets/images/fern.svg) no-repeat center var(--main-color);
+    /* background: url(../../assets/images/fern.svg) no-repeat center var(--main-color); */
     background-position: center;
     background-clip: border-box;
     background-size: cover;

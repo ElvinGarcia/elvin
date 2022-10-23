@@ -7,7 +7,7 @@ color: var(--font-color);
 }
 
 body{
-font-family: "Gotham XNarrow A","Gotham XNarrow B", "Mercury Display A","Mercury Display B","apple-system","BlinkMacSystemFont","Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif;
+font-family:var(--nice-fonts);
 font-weight: 400;
 font-style: normal;
 font-size: 16px;
@@ -43,3 +43,9 @@ a:link.active {
 }
 
 
+#root > .container{
+  background: url("../assets/images/geometric_pattern.svg") ;
+  background-size: 120px;
+  background-attachment: scroll;
+  background-clip: border-box;
+}

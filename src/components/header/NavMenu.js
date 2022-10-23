@@ -6,14 +6,13 @@ import { NavLink } from "react-router-dom";
 //   alt: 'site logo',
 //   name: 'Elvin',
 //   url: '/',
-//   svg:svg
 
 class NavMenu extends Component{
 
   render() {
    const navbarLogo = this.props.images.map((obj, id) => {
      return obj.type === "logo" ? <NavLink to={obj.url} alt={obj.alt} className="nav logo" key={id}>
-       {obj.svg}
+       <img src={obj.src} alt={obj.alt} />
        <span className="logo-name">{obj.name}</span>
      </NavLink> : null
    });
