@@ -7,9 +7,9 @@ class About extends Component{
     const assets =
       {
         images: {
-             type: 'logo',
-           src: './assets/images/elvin.svg',
-             alt: 'site logo',
+             type: 'self_portrait',
+           src: './assets/images/self_portrait.jpeg',
+             alt: 'self portrait',
              name: 'Elvin',
            url: '/',
            },
