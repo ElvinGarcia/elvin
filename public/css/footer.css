@@ -3,33 +3,47 @@
 /* footer start */
 footer{
   display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  background-color: var(--main-color);
-  padding-top: 2em;
-  row-gap:2em;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  background-color:  var(--main-color);
+  /* padding-top: 2em; */
+  /* row-gap:2em; */
 }
 
- .logo.footer{
+footer > div.social_links{
+  display: flex;
+  justify-content: center;
+  column-gap: 2em;
+ }
+
+ footer > p.copyright{
+  display: flex;
+  align-items: center;
+  width:auto;
+  font-size: .8em;
+ }
+
+
+ /* .logo.footer{
   display: flex;
   justify-content: center;
   width: 100%;
- }
+ } */
 
- .logo.footer>a{
-  padding:.5em; /*increases the clickable area*/
- }
+ /* .logo.footer>a{
+  padding:.5em;
+ } */
 
- footer > ul.site_links{
+ /* footer > ul.site_links{
   display: flex;
   justify-content: center;
   width: 100%;
   column-gap: 2em;
- }
+ } */
 
- footer > ul.site_links li:hover a{
+ /* footer > ul.site_links li:hover a{
   opacity: .5;
- }
+ } */
 
 
     /* need to make this fading on both ends */
@@ -41,18 +55,5 @@ footer{
  } */
 
 
- footer > div.social_links{
-   display: flex;
-   justify-content: center;
-   column-gap: 2em;
-  }
-
-  footer > p.copyright{
-   display: flex;
-   justify-content: center;
-   width: 100%;
-   margin-bottom:2em;
-   font-size: .8em;
-  }
 
   /* footer end */

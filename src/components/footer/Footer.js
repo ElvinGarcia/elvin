@@ -7,30 +7,9 @@ class Footer extends Component {
     const assets = [
       {
         images: [
-           {
-              type: 'logo',
-              src: './assets/images/elvin.svg',
-              alt: 'site logo',
-              name: 'Elvin',
-              url: '/',
-            }
+
           ],
         site_links:[
-          {
-              type:'site_links',
-            name: 'Writing',
-              url: 'Writing'
-            },
-          {
-            type:'site_links',
-              name: 'Resume',
-              url: 'Resume'
-            },
-          {
-            type:'site_links',
-              name: 'Projects',
-              url: 'Projects'
-            }
         ],
         social_links: [
           {

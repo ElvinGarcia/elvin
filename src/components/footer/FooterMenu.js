@@ -8,13 +8,13 @@ class FooterMenu extends Component{
     const fullYear = date.getFullYear();
 
     const images = this.props.images.map((obj, id) => {
-      return obj.type === "logo" ? <NavLink to={obj.url} alt={obj.alt} key={id} className="logo">
+      return obj.type === "logo" ? <div className="footer"> <NavLink to={obj.url} alt={obj.alt} key={id} className="logo">
        <img src={obj.src} alt={obj.alt} />
-      </NavLink> : null
+      </NavLink> </div> : null
     });
 
     const site_links = this.props.site_links.map((obj, id) => {
-      return obj.type === "site_links" ? <li className="footer-list-item" key={id}> <NavLink to={obj.url} className="nav-link"> {obj.name}</NavLink> </li> : null;
+      return obj.type === "site_links" ? <ul className="site_links">  <li className="footer-list-item" key={id}> <NavLink to={obj.url} className="nav-link"> {obj.name}</NavLink> </li> </ul> : null;
     }
     );
 
@@ -24,10 +24,9 @@ class FooterMenu extends Component{
     );
     return (
       <>
-        <div className="footer">{images}</div>
-        <ul className="site_links">{site_links}</ul>
-        {/* <hr className="footer divider"></hr> */}
-        <div className="social_links">{social_links} </div>
+        {images}
+        {site_links}
+         <div className="social_links"> {social_links} </div>
         <p className="copyright">All material &#169; Elvin Garcia {fullYear}</p>
       </>
     )
