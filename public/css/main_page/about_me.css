@@ -2,28 +2,18 @@
 
 /* about_me section START */
 
-/* section.about_me{
-  background: url(../../assets/images/skyline.svg) no-repeat center var(--main-color);
-  background-size: cover;
-  background-position-y:center ;
-  background-attachment: scroll;
-  background-clip: border-box;
-} */
-
 section.about_me{
 display: flex;
 flex-flow: column wrap;
 align-content: center;
-padding: 100px;
+padding: 10%;
+gap: .2em 0;
 }
 
 section.about_me > h2{
- margin-bottom: .2em;
- font-size: 1.8em;
- width: 50%;
+ font-size: 2.5em;
  color:#5d63b5;
 }
-
 
 /* about_me section END */
 
@@ -32,23 +22,26 @@ section.about_me > h2{
 /* about me text with pic  START*/
 
  div.about_me {
-  /* background-color: var(--main-color); */
-  /* box-shadow: 4px 1px 4px 1px var(--gray); */
-  width: 50%;
-  padding: 1em;
+   display: flex;
+   justify-content:center ;
+   gap:0 .8em;
+   max-width: 37.5em;
   line-height:1.7em;
   opacity: .7;
-  min-height: 1em;
+}
+
+div.about_me >  p{
   text-align: justify;
 }
 
-
-div.about_me > img{
-  float: right;
-  margin: 10px 2.5em 1px 10px;
+div.about_me > .image_container {
+  height: 15em;
+  padding-top: .5em;
 }
 
-
+div.about_me > .image_container >img {
+    height: 15em;
+}
 
 
  /* about me text with pic END */
