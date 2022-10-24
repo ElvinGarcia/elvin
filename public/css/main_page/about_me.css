@@ -25,9 +25,9 @@ section.about_me > h2{
    display: flex;
    justify-content:center ;
    gap:0 .8em;
-   max-width: 37.5em;
+   max-width: 39em;
   line-height:1.7em;
-  opacity: .7;
+
 }
 
 div.about_me >  p{
