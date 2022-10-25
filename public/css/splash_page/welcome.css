@@ -1,0 +1,17 @@
+
+
+div.greeting_screen{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height:100%;
+  position:absolute;
+
+  background: url("../../assets/images/geometric_pattern.svg") ;
+  background-size: 120px;
+  background-attachment: scroll;
+  background-clip: border-box;
+  border:solid red 2px;
+  opacity:1;
+}

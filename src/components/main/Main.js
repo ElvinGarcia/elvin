@@ -1,13 +1,14 @@
 import React, { Component } from "react"
 import About from "./about/About";
 import Contact from "./contact/Contact";
-// import Presentation from "./presentation/Presentation";
+import Welcome from "../splash_screen/Welcome"
 
 
 class Main extends Component{
   render() {
     return (
       <>
+        <Welcome/>
         <About />
         <Contact />
       </>

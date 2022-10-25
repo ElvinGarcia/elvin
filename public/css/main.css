@@ -11,12 +11,12 @@
 @import "./resume_page/main.css";
 @import "side_heading.css";
 @import "socials.css";
+@import "./splash_page/welcome.css";
 
 
 .container{
   display: flex;
   flex-flow: column wrap;
-  /* background:repeating-linear-gradient(black,white); */
 }
 
 
