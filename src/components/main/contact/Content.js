@@ -5,7 +5,7 @@ class Content extends Component{
   render() {
     return (
       <div className="contact_me form">
-        <h2> Say Hello</h2>
+        <h2> Say Hello!</h2>
         <form method="post" name="contact">
           <ul>
             <li>
@@ -24,7 +24,7 @@ class Content extends Component{
               <textarea id="msg" name="user_message"></textarea>
             </li>
             <li className="button">
-              <button name="send" type="submit">send</button>
+              <button name="send" type="submit">Send</button>
             </li>
           </ul>
         </form>

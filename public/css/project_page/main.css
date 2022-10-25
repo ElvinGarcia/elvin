@@ -1,10 +1,10 @@
 
 .main_projects{
   display: grid;
-  grid-gap: 8vmin;
-  grid-template-columns: var(--gtcolumns-3);
-  height: 100%;
-  margin: 8vmin;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  padding: 10%;
+  gap: .0 2em;
 }
 
 
@@ -12,11 +12,11 @@
 /* codepen start */
 
 .main_projects section.codepen{
-  grid-column: 2/3;
-  grid-row:1; /* ?*/
+  grid-row:2;
   font-size: 18px;
   box-sizing: border-box;
   margin: 0;
+  background-color: var(--main-color);
 }
 
 .codepen.pen{
@@ -24,7 +24,7 @@
 }
 
 .main_projects section.codepen >  h2 , .main_projects section.github > h2{
- text-transform: uppercase;
+ text-transform: capitalize;
  font-size: 2em;
  margin:0;
  font-family:var(--nice-fonts);
@@ -32,28 +32,29 @@
 }
 
 .main_projects section.codepen div.codepen.pen h3.title , .main_projects section.github .project_list >a .project.title{
-  margin-top: .7em;
+  /* margin-top: .7em; */
   font-size: 1.5em;
-  text-transform: uppercase;
+  text-transform: capitalize;
   padding-bottom:5px;
   font-weight: 500;
-  color: #dcdbdb;
+  color: var(--font-color);
 }
 
 .main_projects section.codepen div.codepen.pen p.description, .main_projects section.github .project_list >a > .project.description {
   /* margin: .5em 0; */
-  color: var(--light-gray);
+  color: var(--font-color);
   font-size: 18px;
   text-align: justify;
 }
 
-.main_projects section.codepen div.codepen.pen a{
+/* .main_projects section.codepen div.codepen.pen a{
   color:var(--font-color);
   text-decoration: none;
   background-color: transparent;
 
-}
+} */
 
+/*
 .main_projects section.codepen div.codepen.pen a > button{
   border: 1px solid #ec633a;
   margin: 15px 0;
@@ -63,7 +64,7 @@
   padding: 10px;
   width: 100%;
   cursor: pointer;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: .15em;
   font-size: 13px;
 }
@@ -72,13 +73,14 @@
   transition: all .15s ease-in-out;
   background-color: #ec633aed;
   color: white;
-}
+} */
 
 /* codepen end */
 
 /*github start */
 .main_projects section.github{
-  grid-column: 3;
+  grid-row:2;
+  background-color: var(--main-color);
 }
 
 .main_projects section.github .project_list{

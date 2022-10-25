@@ -6,7 +6,8 @@ footer{
   flex-flow: row nowrap;
   justify-content: space-around;
   background-color:  var(--main-color);
-  /* padding-top: 2em; */
+  /* min-height: 5em; */
+  padding: 1em 0 ;
   /* row-gap:2em; */
 }
 

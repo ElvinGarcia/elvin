@@ -5,7 +5,7 @@ export default function Codepen() {
 
   const pens = [{
     title: 'Analog Clock',
-    snippet: <iframe height="300" width="100%;" scrolling="no" title="Analog Clock" src="https://codepen.io/elvingarcia/embed/RwGmjbB" frameBorder="no" loading="lazy" allowtransparency="true" allowFullScreen= {true}>
+    snippet: <iframe height="300" width="100%;" scrolling="no" title="Analog Clock" src="https://codepen.io/elvingarcia/embed/RwGmjbB" frameBorder="no" loading="lazy" allowtransparency="true" allowFullScreen= {false}>
     See the Pen <a href="https://codepen.io/elvingarcia/embed/RwGmjbB">
     Analog Clock</a> by Elvin (<a href="https://codepen.io/elvingarcia">@elvingarcia</a>)
     on <a href="https://codepen.io">CodePen</a>.
