@@ -12,6 +12,7 @@ gap: .2em 0;
 
 section.about_me > h2{
  color: var(--accent-color);
+ font-size: 3em;
 }
 
 /* about_me section END */
@@ -26,11 +27,13 @@ section.about_me > h2{
    gap:0 .8em;
    max-width: 39em;
   line-height:1.7em;
+  font-size: 1.1em;
 
 }
 
 div.about_me >  p{
   text-align: justify;
+  /* text-align-last: justify; */
 }
 
 div.about_me > .image_container {

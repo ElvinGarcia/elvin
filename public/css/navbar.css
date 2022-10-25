@@ -6,6 +6,7 @@
   justify-content: space-around;
   background-color: var(--main-color);
   padding:1.5em 2em 1em;
+  border:red solid 1px;
 }
 
 .nav-menu ul{
