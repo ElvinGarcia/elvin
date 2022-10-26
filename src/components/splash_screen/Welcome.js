@@ -18,8 +18,8 @@ export default function Welcome() {
 
 
   return (
-      <>
+      <div className="greeting_screen">
       {content}
-      </>
+      </div>
  )
 }

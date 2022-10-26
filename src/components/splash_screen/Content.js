@@ -6,7 +6,7 @@ export default function Content(props) {
   console.log(props)
 
   return (
-    <div className="greeting_screen">
+    <div className="content">
       <img className="logo" src={props.logo} alt={props.alt}></img>
        <div className="greeting_container">
         <p className="greeting"> {props.greeting} </p>
