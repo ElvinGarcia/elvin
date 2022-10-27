@@ -48,7 +48,7 @@ a:link.active {
 }
 
 
-#root > .container{
+#root {
   background: url("../assets/images/geometric_pattern.svg") ;
   background-size: 120px;
   background-attachment: scroll;

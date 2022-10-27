@@ -2,13 +2,11 @@
 
 div.greeting_screen{
   display:flex;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  background: url("../../assets/images/geometric_pattern.svg") ;
-  background-size: 120px;
-  background-attachment: scroll;
-  background-clip: border-box;
-  opacity:1;
+  min-height: 100vh;
+  /* min-height: 100vw; */
 }
 
 

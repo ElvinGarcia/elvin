@@ -16,7 +16,12 @@ class Nav extends Component {
             url: '/',
             }
           ],
-        site_links:[
+        site_links: [
+          {
+            type:'site_links',
+              name: 'About',
+              url: 'about_me'
+            },
           {
               type:'site_links',
             name: 'Writing',
@@ -31,6 +36,11 @@ class Nav extends Component {
             type:'site_links',
               name: 'Projects',
               url: 'Projects'
+          },
+          {
+            type:'site_links',
+              name: 'Contact',
+              url: 'contact'
             }
         ],
       }
