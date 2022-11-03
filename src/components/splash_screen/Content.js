@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 
 export default function Content(props) {
-  console.log(props)
 
   return (
     <div className="content">
