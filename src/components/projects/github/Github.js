@@ -45,7 +45,7 @@ ${githubPinnedRepos.query}
       start_count={stargazerCount}
       url={url}
       key={id}
-      languages={languages}
+      languages={languages.languageObjects}
     />)
   }
   );
