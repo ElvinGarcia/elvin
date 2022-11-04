@@ -7,7 +7,7 @@ const Content = (props) => {
   const languageSet = () => {
     if (Array.isArray(props.languages) && props.languages.length > 0) {
       return (props.languages.map((language) => {
-        return <span className="project language" key={language.language.id} style={{color:language.language.color } }>{language.language.name}</span>
+        return <span className="project language" key={language.language.id} style={{borderColor:language.language.color } }>{language.language.name}</span>
       }))
     } else {
       return <span className="project language"> {props.languages} </span>
