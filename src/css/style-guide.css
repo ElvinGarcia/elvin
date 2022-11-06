@@ -49,7 +49,7 @@ a:link.active {
 
 
 #root {
-  background: url("../assets/images/geometric_pattern.svg") ;
+  background: url(".././assets/images/geometric_pattern.svg") ;
   background-size: 120px;
   background-attachment: scroll;
   background-clip: border-box;

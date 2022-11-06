@@ -18,7 +18,7 @@ export default function Welcome() {
         { user &&
       <Content
         name={user.name}
-        logo={'./assets/images/elvin.svg'}
+        logo={"../../assets/images/elvin.svg"}
         greeting={`Hi, I'm ${user.name}.`}
         callToAction={"View my porfolio"}
         alt={'site logo'}

@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom'; // use for routing
 import { ApolloProvider, ApolloClient, InMemoryCache,createHttpLink } from '@apollo/client';
 import github from './db';
 import App from './App';
+import "./index.css";
 
 const link = createHttpLink({
   uri: github.baseURL,
