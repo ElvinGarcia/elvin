@@ -3,7 +3,7 @@ import Content from "./Content";
 
 import { useContext } from "react";
 import UserData from "../../siteData/UserData";
-
+import elvin from "../../assets/images/elvin.svg"
 
 
 export default function Welcome() {
@@ -18,7 +18,7 @@ export default function Welcome() {
         { user &&
       <Content
         name={user.name}
-        logo={"../../assets/images/elvin.svg"}
+        logo= {elvin}
         greeting={`Hi, I'm ${user.name}.`}
         callToAction={"View my porfolio"}
         alt={'site logo'}
