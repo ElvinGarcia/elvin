@@ -1,10 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import Github from "./github/Github";
 import Codepen from "./codepen/Codepen";
 import PageTitle from "../page_title/PageTitle";
 
-class Projects extends Component{
-  render() {
+function Projects(){
+
+
     return (
       <main className="main_projects">
         <PageTitle name={"Projects"} />
@@ -12,7 +13,7 @@ class Projects extends Component{
         <Codepen />
       </main>
     )
-  }
+
 }
 
 

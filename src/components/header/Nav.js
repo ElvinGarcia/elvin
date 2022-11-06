@@ -1,9 +1,12 @@
-import React, { Component } from "react";
-import NavMenu from './NavMenu';
+import React, { useContext } from "react";
+import NavMenu from "./NavMenu";
 
+import UserData from "../../siteData/UserData";
 
-class Nav extends Component {
-  render() {
+function Nav () {
+
+  const data = useContext(UserData);
+  const user = data && data.user;
 
     const assets = [
       {
@@ -12,7 +15,7 @@ class Nav extends Component {
               type: 'logo',
             src: './assets/images/elvin.svg',
               alt: 'site logo',
-              name: 'Elvin Garcia',
+              name: user && user.name,
             url: '/',
             }
           ],
@@ -56,7 +59,6 @@ class Nav extends Component {
        {menu}
       </nav>
     );
-  };
 }
 
 

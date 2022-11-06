@@ -1,12 +1,14 @@
 
 const githubProfile = {
 query:`query ProfileInfo{
-    viewer {
+    user: viewer {
+      id
       name
       bio
       email
       websiteUrl
       githubUrl: url
+      twitterUsername
       avatarUrl
     }
       }`

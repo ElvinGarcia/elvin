@@ -49,22 +49,18 @@ const [data, setData] = useState([]);
     },[])
 
 
-  const handleContent = (obj) => {
-    setContentData(() => ({ ...contentData, post: obj }));
-}
+  const handleContent = (obj) => { setContentData(() => ({ ...contentData, post: obj }));}
 
 
-  const contentList = data.map(
-    obj => <ContentList key={obj.date} {...obj} handleContent={ handleContent } />
-  );
+  const contentList = data.map(obj => <ContentList key={obj.date} {...obj} handleContent={ handleContent } />);
 
 
   return (
-    <>
+  <>
    <section className="technical writing list">
     <h2 className=" technical writing title">Technical Writing</h2>
-        {contentList}
-      </section>
+     {contentList}
+   </section>
       <Content {...contentData} key={contentData.post.date} />
   </>
     )

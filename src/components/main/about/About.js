@@ -1,22 +1,27 @@
-import React, { Component } from "react"
+import React,{useContext} from "react"
 import Content from "./Content";
 
-class About extends Component{
 
-  render() {
+import UserData from "../../../siteData/UserData";
+
+function About(){
+
+    const data = useContext(UserData);
+    const user = data && data.user;
+
     const assets =
       {
         images: {
              type: 'self_portrait',
-           src: './assets/images/self_portrait.jpeg',
+           src: user && user.avatarUrl ,
              alt: 'self portrait',
-             name: 'Elvin',
+             name: user && user.name,
            url: '/',
            },
         content: {
           type: "about_me",
           title:" About Me",
-          content:"Elvin Garcia is an award-winning Speaker, VP of Developer Experience at Netlify, Vue core team member, and Staff Writer at CSS-Tricks. Sarah is formerly Principal Lead of Emerging Markets, Cloud Advocates at Microsoft and Manager of UX & Engineering at Trulia/Zillow Group. She’s the author of SVG Animations from O’Reilly and has given Frontend Masters workshops. Sarah is a co-organizer of ConcatenateConf, a free conference for Nigerian and Kenyan developers. Sarah is also the co-founder of Web Animation Workshops with Val Head. She has worked for 15 years as a web developer, and at points worked as a Scientific Illustrator and a Professor in the Greek Islands.",
+          content:user && user.bio ,
         }
       }
 
@@ -25,7 +30,7 @@ class About extends Component{
         <Content assets={assets} />
       </section>
     )
-  }
+
 }
 
 

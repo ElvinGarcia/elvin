@@ -13,21 +13,19 @@ const link = createHttpLink({
   },
   });
 
-
-
 const client = new ApolloClient({
   cache: new InMemoryCache(),
   link
 });
 
+
 // returns an object with a render function
 const root = createRoot(document.querySelector('#root'));
 
 root.render(
-  <BrowserRouter>
-    <ApolloProvider  client={client}>
-      <App />
-    </ApolloProvider>
-  </BrowserRouter>
-
+    <BrowserRouter >
+      <ApolloProvider  client={client} >
+        <App/>
+        </ApolloProvider>
+    </BrowserRouter>
   )

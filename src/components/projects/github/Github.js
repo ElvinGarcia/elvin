@@ -10,7 +10,7 @@ ${githubPinnedRepos.query}
 `
 
   const { loading, error, data } = useQuery(PINNED_REPOS);
-    if (loading) { console.log('this is loading ...🏃🏻‍♂️..') };
+    if (loading) { console.log('loading ...🏃🏻‍♂️..') };
     if(error){console.log("An error occured: ", error)}
 
   const content = data && data.viewer.pinnedItems.repositories.map((obj) => {
