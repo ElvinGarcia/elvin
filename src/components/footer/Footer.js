@@ -3,6 +3,7 @@ import FooterMenu  from "./FooterMenu";
 
 import UserData from "../../siteData/UserData";
 
+
 function Footer () {
 
   const data = useContext(UserData);

@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import NavMenu from "./NavMenu";
-
 import UserData from "../../siteData/UserData";
+import elvin from "../../assets/images/elvin.svg"
+
 
 function Nav () {
 
@@ -13,7 +14,7 @@ function Nav () {
         images: [
            {
               type: 'logo',
-            src: './assets/images/elvin.svg',
+            src: elvin,
               alt: 'site logo',
               name: user && user.name,
             url: '/',
