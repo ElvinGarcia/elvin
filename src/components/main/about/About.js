@@ -21,7 +21,7 @@ function About(){
         content: {
           type: "about_me",
           title:" About Me",
-          content:user && user.bio ,
+          content:user && user.biography.description.text ,
         }
       }
 

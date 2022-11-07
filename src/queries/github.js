@@ -1,18 +1,27 @@
 
 const githubProfile = {
-query:`query ProfileInfo{
-    user: viewer {
-      id
-      name
-      bio
-      email
-      websiteUrl
-      githubUrl: url
-      twitterUsername
-      avatarUrl
+query:`query ProfileInfo {
+  user: viewer {
+    id
+    name
+    bio
+    email
+    websiteUrl
+    githubUrl: url
+    twitterUsername
+    avatarUrl
+    biography: repository(name: "ElvinGarcia") {
+      description: object(expression: "main:README.md") {
+        ... on Blob {
+          text
+        }
+      }
     }
-      }`
+  }
+}`
 };
+
+
 
 const githubPinnedRepos = {
   query:`query PinnedRepos {

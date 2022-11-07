@@ -31,9 +31,9 @@ section.about_me > h2{
 
 }
 
-div.about_me >  p{
+div.about_me >  .content{
   text-align: justify;
-  /* text-align-last: justify; */
+  /* text-align-last: justify;  */
 }
 
 div.about_me > .image_container {

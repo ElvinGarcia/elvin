@@ -11,15 +11,16 @@ import Contact from './components/main/contact/Contact';
 
 
 import { useQuery, gql } from "@apollo/client";
-import { githubProfile } from './queries/github';
+import { githubProfile} from './queries/github';
 import UserData from "./siteData/UserData";
 
 
 function App() {
   const ProfileInfo = gql`${githubProfile.query} `;
   const { loading, error, data } = useQuery(ProfileInfo);
-  loading && console.log("fetching .... 🐕");
+  loading && console.log("fetching ProfileInfo.... 🐕");
   error && console.log("An error occured:", error);
+
 
 
 
