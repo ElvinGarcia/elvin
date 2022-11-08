@@ -13,9 +13,8 @@ function Content() {
     const email = form.current.user_email.value;
     const message = form.current.user_message.value;
     window.location.href = `mailto:dev@ElvinGarcia.com?subject=${name}:${email}&body=${message}`;
-    form.current.user_message.value = " "
-    form.current.user_email.value = " "
-    form.current.user_name.value=" "
+    // reset form fields
+    form.current.reset();
 
 }
 
