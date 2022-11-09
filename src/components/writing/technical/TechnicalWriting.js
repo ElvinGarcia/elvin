@@ -2,7 +2,8 @@ import React,{useState, useEffect} from "react";
 import ContentList from "./ContentList";
 import Content from "./Content";
 
-
+// Framer-motion
+import { motion } from "framer-motion"
 
 
 export default function TechnicalWriting(){
@@ -57,10 +58,14 @@ const [data, setData] = useState([]);
 
   return (
   <>
-   <section className="technical writing list">
+      <motion.section className="technical writing list"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration:3, direction:"linear"  }}
+      >
     <h2 className=" technical writing title">Technical Writing</h2>
      {contentList}
-   </section>
+   </motion.section>
       <Content {...contentData} key={contentData.post.date} />
   </>
     )

@@ -2,15 +2,18 @@ import React from "react"
 import Nav from '../components/header/Nav'
 import Footer from '../components/footer/Footer'
 import { Outlet } from "react-router-dom";
+// Framer-motion
+import { motion } from "framer-motion"
+
 
 
 const Layout = () => {
   return (
-    <div className="container">
+    <motion.div className="container">
       <Nav />
       <Outlet />
       <Footer />
-    </div>
+    </motion.div>
   );
 };
 
