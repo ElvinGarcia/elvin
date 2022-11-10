@@ -6,6 +6,7 @@ import Content from "./Content";
 import { motion } from "framer-motion"
 
 
+
 export default function TechnicalWriting(){
 
 
@@ -53,19 +54,21 @@ const [data, setData] = useState([]);
   const handleContent = (obj) => { setContentData(() => ({ ...contentData, post: obj }));}
 
 
-  const contentList = data.map(obj => <ContentList key={obj.date} {...obj} handleContent={ handleContent } />);
+  const contentList = data.map((obj,i) => <ContentList key={obj.date} {...obj} handleContent={handleContent} />
+  );
 
 
   return (
   <>
-      <motion.section className="technical writing list"
+    <motion.section className="technical writing list"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration:3, direction:"linear"  }}
-      >
-    <h2 className=" technical writing title">Technical Writing</h2>
-     {contentList}
-   </motion.section>
+          transition={{ duration: 2.5, direction: "linear" }}
+        >
+
+        <h2 className=" technical writing title">Technical Writing</h2>
+        {contentList}
+      </motion.section>
       <Content {...contentData} key={contentData.post.date} />
   </>
     )
