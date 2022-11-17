@@ -4,7 +4,7 @@ const github = {
   username: "elvingarcia",
   headers: {
     "Content-Type": "application/graphql",
-    Authorization: `bearer ${GITHUB_GRAPHQL}`,
+    Authorization: `bearer `,
   },
 };
 

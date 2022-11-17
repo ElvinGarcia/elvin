@@ -6,17 +6,20 @@ import github from './db';
 import App from './App';
 import "./index.css";
 
+console.log("process.env.REACT_APP_NOT_SECRET_CODE", process.env.REACT_APP_NOT_SECRET_CODE)
+console.log("process.env.NODE_ENV", process.env.NODE_ENV)
+
 const link = createHttpLink({
-  uri: github.baseURL,
-  credentials:"omit",  //its okay to use CORS
-  headers: {
-    ...github.headers
-  },
+  // uri: github.baseURL,
+  // credentials:"omit",  //its okay to use CORS
+  // headers: {
+  //   ...github.headers
+  // },
   });
 
 const client = new ApolloClient({
-  cache: new InMemoryCache(),
-  link
+  // cache: new InMemoryCache(),
+  // link
 });
 
 
