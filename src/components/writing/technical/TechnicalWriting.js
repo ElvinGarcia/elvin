@@ -14,9 +14,9 @@ const [contentData, setContentData] = useState({ toggle: false, post: "", });
 const [data, setData] = useState([]);
 
   useEffect(
-     () => {
+    () => {
       // repo list content
-      const url = 'https://api.github.com/repositories/95937718/contents/technical_blog/_posts';
+      const url = `${process.env.REACT_APP_POSTS_LOCATION}`;
       fetch(url)
         .then(resp => resp.json())
         .then(resp => resp.map(obj => obj.download_url))// raw data url // needs to check if null or not
