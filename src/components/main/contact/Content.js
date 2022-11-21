@@ -9,10 +9,10 @@ function Content() {
   const formSubmit = event => {
     event.preventDefault();
 
-    // const name = form.current.user_name.value;
-    // const email = form.current.user_email.value;
-    // const message = form.current.user_message.value;
-    // window.location.href = `mailto:dev@ElvinGarcia.com?subject=${name}:${email}&body=${message}`;
+    const name = form.current.user_name.value;
+    const email = form.current.user_email.value;
+    const message = form.current.user_message.value;
+    window.location.href = `mailto:dev@ElvinGarcia.com?subject=${name}:${email}&body=${message}`;
     // reset form fields
     form.current.reset();
 
