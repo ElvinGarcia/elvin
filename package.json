@@ -2,6 +2,7 @@
   "name": "elvin",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://637a7454662f725d45089825--poetic-melba-702f0d.netlify.app/",
   "dependencies": {
     "@apollo/client": "^3.7.1",
     "@testing-library/jest-dom": "^5.16.5",
