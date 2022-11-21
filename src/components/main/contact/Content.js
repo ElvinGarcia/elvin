@@ -9,10 +9,10 @@ function Content() {
   const formSubmit = event => {
     event.preventDefault();
 
-    const name = form.current.user_name.value;
-    const email = form.current.user_email.value;
-    const message = form.current.user_message.value;
-    window.location.href = `mailto:dev@ElvinGarcia.com?subject=${name}:${email}&body=${message}`;
+    // const name = form.current.user_name.value;
+    // const email = form.current.user_email.value;
+    // const message = form.current.user_message.value;
+    // window.location.href = `mailto:dev@ElvinGarcia.com?subject=${name}:${email}&body=${message}`;
     // reset form fields
     form.current.reset();
 
@@ -21,7 +21,7 @@ function Content() {
     return (
       <div className="contact_me form">
         <h2> Say Hello!</h2>
-        <form method="post" name="contact" ref={form} onSubmit={formSubmit}>
+        <form method="POST" name="contact" ref={form} data-netlify="true" onSubmit={formSubmit}>
           <ul>
             <li>
               <label htmlFor="name">Name</label>
