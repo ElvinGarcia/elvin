@@ -29,7 +29,7 @@ export default function Welcome() {
       <Content
         name={user.name}
         logo= {elvin}
-        greeting={`Hi, I'm ${user.name}.`}
+        greeting={`Hi, I'm Elvin`}
         callToAction={"View my porfolio"}
         alt={'site logo'}
       />
