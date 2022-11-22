@@ -19,6 +19,23 @@
   flex-flow: column wrap;
 }
 
+@media screen and (max-width: 500px) {
+  .greeting_screen > .content {
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+  }
+  .nav-menu{
+  flex-flow: row-reverse nowrap;
+  /* justify-content: space-around; */
+  }
 
+  .nav-menu .site_links {
+    display: flex;
+    flex-flow: column wrap;
+    z-index: 3;
+  }
+
+}
 
 

@@ -38,5 +38,6 @@ div.greeting_screen .greeting_container > a.call_to_action{
   font-weight: 500;
   padding: .4em;
   color:var(--main-color);
+  border-radius: 30px;
   background-color: var(--accent-color);
 }
