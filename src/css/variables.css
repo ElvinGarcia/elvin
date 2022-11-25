@@ -1,14 +1,15 @@
 /* These are the theme variable colors used throughout the website */
 
 :root{
-  --main-color:#000000;
+  --main-color:#121212;
   --accent-color:#5d63b5;
-  --font-color:white;
+  --font-color:#f2f2f2;
   --dark-gray:#444;
   --light-gray:#c1c1c1;
   --red: #dc143c;
   --gtcolumns-3: 1fr 2fr 2fr;
-  --nice-fonts: "Source Sans Pro", sans-serif, "Gotham XNarrow A","Gotham XNarrow B", "Segoe UI", Roboto, Helvetica, Neue, Arial ;
+  --nice-fonts:'Open Sans', sans-serif;
+  --headliners:'Dosis', sans-serif;
 
 
 

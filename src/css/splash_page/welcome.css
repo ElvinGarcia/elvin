@@ -22,22 +22,24 @@ div.greeting_screen .greeting_container{
   gap:.5em 0;
   height:auto;
   width: auto;
-  font-family: "Source Sans Pro";
 }
 
-div.greeting_screen .greeting_container > p.greeting{
+/* div.greeting_screen .greeting_container > p.greeting{
   text-align: center;
   font-size: 3.9em;
   font-weight:bolder;
-}
+} */
 
 div.greeting_screen .greeting_container > a.call_to_action{
   display: inline-block;
   width: 100%;
   text-align: center;
-  font-weight: 500;
   padding: .4em;
-  color:var(--main-color);
+  color:var(--font-color);
   border-radius: 30px;
   background-color: var(--accent-color);
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.3em;
 }

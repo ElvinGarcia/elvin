@@ -8,7 +8,7 @@ export default function Content(props) {
     <div className="content">
       <img className="logo" src={props.logo} alt={props.alt}></img>
        <div className="greeting_container">
-        <p className="greeting"> {props.greeting} </p>
+        <h1 className="greeting"> {props.greeting} </h1>
         <Link className="call_to_action" to={'about_me'} >{props.callToAction}</Link>
         </div>
       </div>
