@@ -10,8 +10,8 @@ query:`query ProfileInfo {
     githubUrl: url
     twitterUsername
     avatarUrl
-    biography: repository(name: "ElvinGarcia") {
-      description: object(expression: "main:README.md") {
+    biography: repository(name: "main_site_resources") {
+      description: object(expression: "main:about_me/about_me.md") {
         ... on Blob {
           text
         }

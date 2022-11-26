@@ -2,7 +2,7 @@ import React from "react";
 
 
 const Content = (props) => {
-  const src="https://docs.google.com/document/preview?format=pdf&id=1wzaO2Gyj3A74_ZuMbsa66Pz-YBm09Fn3p4BAgBEBISs&includes_info_params=true"
+  const src="https://docs.google.com/document/d/18Em-uTKuPkMoNZWt_l2GjSm3kw0OTdl6944SjNOOljg/edit?usp=sharing&includes_info_params=true"
   return (
     <section className="resume_content">
       <embed

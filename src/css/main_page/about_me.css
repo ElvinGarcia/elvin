@@ -28,12 +28,13 @@ section.about_me > h2{
    max-width: 39em;
   line-height:1.7em;
   font-size: 1.1em;
-
 }
 
 div.about_me >  .content{
   text-align: justify;
-  /* text-align-last: justify;  */
+  font-family: var(--nice-fonts);
+  font-size: .9em;
+
 }
 
 div.about_me > .image_container {

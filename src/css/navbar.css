@@ -15,6 +15,11 @@
   flex-flow: row nowrap;
   align-items: center;
   gap:0 35px;
+
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 600;
+
 }
 
 .nav-menu ul li:hover a , .nav-menu ul .active{
@@ -23,8 +28,10 @@
 
 
 .nav.logo > .logo-name{
-  font-family: sans-serif;
-  font-size: 2em;
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3em;
   text-transform: capitalize;
   vertical-align:bottom;
   padding-left: .5em;
