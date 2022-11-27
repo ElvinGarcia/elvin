@@ -1,5 +1,6 @@
 import React,{useContext} from "react"
 import Content from "./Content";
+import profile from "../../../css/assets/images/profile.jpg"
 
 
 import UserData from "../../../siteData/UserData";
@@ -13,7 +14,8 @@ function About(){
       {
         images: {
              type: 'self_portrait',
-           src: user && user.avatarUrl ,
+          //  src: user && user.avatarUrl ,
+           src: user && profile ,
              alt: 'self portrait',
              name: user && user.name,
            url: '/',
