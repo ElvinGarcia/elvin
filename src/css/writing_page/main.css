@@ -1,18 +1,17 @@
 /* start of main containter */
 .main_writings{
   display: grid;
-  grid-gap: 8vmin;
-  /* this need to change to restrict the middle column from expanding too much AND shrinking too much */
-  grid-template-columns:  1fr minmax(0, 3fr) 2fr;
-  height: 100%;
-  margin: 8vmin;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  padding: 10%;
+  gap: .0 2em;
 }
 /* end of main containter */
 
 /* start of List */
 
 section.technical.writing.list{
-  grid-column: 3;
+  grid-row:2;
   font-size: 18px;
   box-sizing: border-box;
   margin: 0;
@@ -39,8 +38,7 @@ section.technical.writing.list{
 /* start of content */
 
 section.technical.writing.content{
-grid-column: 2;
-grid-row:1;
+grid-row:2;
 box-sizing: border-box;
 margin: 0;
 min-height: 90vh;
