@@ -1,7 +1,6 @@
 
 section.heading{
   position: relative;
-  grid-row:1;
 }
 
 section.heading > h1{

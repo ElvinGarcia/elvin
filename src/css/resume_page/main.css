@@ -1,16 +1,11 @@
 .resume{
   display: grid;
-  /* grid-gap: 8vmin; */
-  /* grid-template-columns:  1fr ; */
-  height: 100%;
-  /* margin: 8vmin; */
+  grid-template-columns: 1fr;
+  align-content: center;
+  padding: 10%;
+  gap: .0 2em;
 }
 
-.resume_content{
-  grid-column: 1;
-  grid-row:2;
-  font-size: 18px;
-  box-sizing: border-box;
-  margin: 0;
-}
-
+ .resume_content{
+  grid-row: 2;
+ }
