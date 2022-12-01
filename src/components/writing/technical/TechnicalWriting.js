@@ -54,8 +54,7 @@ const [data, setData] = useState([]);
   const handleContent = (obj) => { setContentData(() => ({ ...contentData, post: obj }));}
 
 
-  const contentList = data.map((obj,i) => <ContentList key={obj.date} {...obj} handleContent={handleContent} />
-  );
+  const contentList = data.map((obj, i) => <ContentList key={i+Math.random()} {...obj} handleContent={handleContent} />);
 
 
   return (
@@ -69,7 +68,7 @@ const [data, setData] = useState([]);
         <h2 className=" technical writing title">Technical Writing</h2>
         {contentList}
       </motion.section>
-      <Content {...contentData} key={contentData.post.date} />
+      <Content {...contentData} key={contentData.post.date}  />
   </>
     )
 
