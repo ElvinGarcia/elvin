@@ -6,7 +6,7 @@ div.greeting_screen{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  /* min-height: 100vw; */
+
 }
 
 
@@ -24,11 +24,7 @@ div.greeting_screen .greeting_container{
   width: auto;
 }
 
-/* div.greeting_screen .greeting_container > p.greeting{
-  text-align: center;
-  font-size: 3.9em;
-  font-weight:bolder;
-} */
+
 
 div.greeting_screen .greeting_container > a.call_to_action{
   display: inline-block;
@@ -43,3 +39,27 @@ div.greeting_screen .greeting_container > a.call_to_action{
   font-weight: 500;
   font-size: 1.3em;
 }
+
+
+/* ***********************@media query start ******************************* */
+@media screen and (max-width: 500px) {
+
+  div.greeting_screen{
+    display:flex;
+    flex-flow: column wrap;
+    min-width: 100vw;
+  }
+
+  div.greeting_screen > .content{
+    display:flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    border: red solid 1px;
+  }
+
+}
+
+
+/* ***********************@media query end ******************************* */
