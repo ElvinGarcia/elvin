@@ -46,5 +46,33 @@ div.about_me > .image_container >img {
     height: 15em;
 }
 
-
  /* about me text with pic END */
+
+
+ /* ***********************@media query start ******************************* */
+
+
+ @media screen and (max-width: 800px) {
+
+  section.about_me{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    padding: 10%;
+    gap: .2em 0;
+    /* border:red solid 1px; */
+    }
+
+
+
+
+
+}
+
+
+
+
+
+
+
+ /* ***********************@media query end ******************************* */
