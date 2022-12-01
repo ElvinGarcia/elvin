@@ -22,38 +22,11 @@ footer > div.social_links{
   align-items: center;
   width:auto;
   font-size: .8em;
+  font-family: var(--headliners);
  }
 
 
- /* .logo.footer{
-  display: flex;
-  justify-content: center;
-  width: 100%;
- } */
 
- /* .logo.footer>a{
-  padding:.5em;
- } */
-
- /* footer > ul.site_links{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  column-gap: 2em;
- } */
-
- /* footer > ul.site_links li:hover a{
-  opacity: .5;
- } */
-
-
-    /* need to make this fading on both ends */
- /* footer > hr.footer.divider{
-  border: 1px var(--gray) solid;
-  margin:2em 0;
-  opacity: .1;
-  width: 80%;
- } */
 
 
 
