@@ -39,6 +39,21 @@
   /* letter-spacing: .1em; */
 }
 
-
-
 /* Nav menu end */
+
+/* ***********************@media query start ******************************* */
+
+@media screen and (max-width: 800px) {
+  .nav-menu{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--main-color);
+    padding:.9em 0 .5em;
+    row-gap: 1em;
+    border:red solid 1px;
+  }
+}
+
+/* ***********************@media query end ******************************* */
