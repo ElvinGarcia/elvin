@@ -27,12 +27,20 @@ function FooterMenu(props){
       return obj.type === "social_links" ? <a href={obj.href} name={obj.name} target={"_blank"} rel={"noreferrer"} key={id}>{obj.svg}</a> : null;
     }
     );
+
+   const netlifyStatus =  <svg width="100" height="60" xmlns="http://www.w3.org/2000/svg" style={{'position':`absolute`}}>
+  <image href="https://api.netlify.com/api/v1/badges/23d4c92b-0231-4dbd-b5e3-206933bf06fa/deploy-status" height="100" width="100"  />
+</svg>
+
+
+
     return (
       <>
         {images}
         {site_links}
          <div className="social_links"> {social_links} </div>
         <p className="copyright">All material &#169; {user && user.name} {fullYear}</p>
+        {process.env.NODE_ENV === "development" ? netlifyStatus : null }
       </>
     )
   }
