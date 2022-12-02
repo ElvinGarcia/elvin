@@ -10,7 +10,7 @@
 }
 
 /* pages on the site */
-.nav-menu ul{
+.site_links{
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -22,10 +22,22 @@
 
 }
 
-.nav-menu ul li:hover a , .nav-menu ul .active{
+.list_item>a{
+  color:var(--font-color);
+}
+
+.list_item:hover a{
  opacity: .5;
 }
 
+.site_links > .list_item > a.active {
+  font-size: large;
+  color:var(--accent-color);
+  opacity: .5;
+  pointer-events: none;
+  text-transform:uppercase;
+
+}
 
 .nav.logo > .logo-name{
   font-family: 'Dosis';
