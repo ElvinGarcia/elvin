@@ -9,9 +9,6 @@ color: var(--font-color);
 }
 
 body{
-/* font-family:var(--nice-fonts);
- */
-/* font-family:; */
 font-weight: 400;
 font-style: normal;
 font-size: 16px;

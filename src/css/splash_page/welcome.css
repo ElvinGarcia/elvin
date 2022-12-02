@@ -56,7 +56,6 @@ div.greeting_screen .greeting_container > a.call_to_action{
     align-items: center;
     justify-content: space-between;
     height: auto;
-    border: red solid 1px;
   }
 
 }
