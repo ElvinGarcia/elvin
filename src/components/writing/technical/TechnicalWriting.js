@@ -1,16 +1,13 @@
 import React,{useState, useEffect} from "react";
 import ContentList from "./ContentList";
-import Content from "./Content";
 
-// Framer-motion
-import { motion } from "framer-motion"
+
+import Accordion from 'react-bootstrap/Accordion';
 
 
 
 export default function TechnicalWriting(){
 
-
-const [contentData, setContentData] = useState({ toggle: false, post: "", });
 const [data, setData] = useState([]);
 
   useEffect(
@@ -51,24 +48,24 @@ const [data, setData] = useState([]);
     },[])
 
 
-  const handleContent = (obj) => { setContentData(() => ({ ...contentData, post: obj }));}
-
-
-  const contentList = data.map((obj, i) => <ContentList key={i+Math.random()} {...obj} handleContent={handleContent} />);
+  const contentList = data.map((obj, i) => <ContentList eventKey={i} {...obj} key={i+Math.random()}   />);
 
 
   return (
-  <>
-    <motion.section className="technical writing list"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-          transition={{ duration: 2.5, direction: "linear" }}
-        >
-
-        <h2 className=" technical writing title">Technical Writing</h2>
+    <>
+    <Accordion className={"technical writing list"}>
         {contentList}
-      </motion.section>
-      <Content {...contentData} key={contentData.post.date}  />
+    </Accordion>
+      {/* <AllCollapseExample/> */}
+        {/* <Accordion.Item eventKey="0">
+          <div className="technical writing list">
+            <h2 className=" technical writing title">Technical Writing</h2>
+            {contentList}
+          </div>
+        </Accordion.Item> */}
+
+
+
   </>
     )
 

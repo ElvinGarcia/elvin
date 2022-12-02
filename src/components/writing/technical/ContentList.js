@@ -1,14 +1,18 @@
-
 import React from "react";
+import Content from "./Content";
+import Accordion from 'react-bootstrap/Accordion';
 
 const ContentList = (props) => {
   return (
     <>
-    <div className="writing list">
-       <span className="post link" onClick={()=>props.handleContent(props)} >
-        <h3 className="post title" > {props.title} </h3>
-      </span>
-      </div>
+      <Accordion.Item eventKey={props.eventKey}>
+        <Accordion.Header as={"h2"} className="technical writing content title">
+          {props.title}
+        </Accordion.Header>
+        <Accordion.Body as={"div"} className="writing content">
+          <Content content={props.content} />
+        </Accordion.Body>
+      </Accordion.Item>
     </>
   )
 }
