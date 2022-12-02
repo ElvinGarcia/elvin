@@ -5,7 +5,14 @@
 *{
 box-sizing: border-box;
 color: var(--font-color);
+}
 
+#root {
+  background-attachment: scroll;
+  background: url(".././assets/images/geometric_pattern.svg") ;
+  background-size: 5.5em;
+  background-clip: border-box;
+  background-repeat: repeat;
 }
 
 body{
@@ -15,9 +22,9 @@ font-size: 16px;
 word-spacing: 1px;
 line-height: 1.15;
 font-style: var(--font-color);
+background-color: var(--main-color);
 -webkit-text-size-adjust: 100%;
 -moz-osx-font-smoothing: grayscale;
-background-color: var(--main-color);
 }
 
 
@@ -50,13 +57,7 @@ a:link{
 
 a:link.active {
   text-decoration: none;
-  color: var(--gray);
+  color: var(--dark-gray);
 }
 
 
-#root {
-  background: url(".././assets/images/geometric_pattern.svg") ;
-  background-size: 120px;
-  background-attachment: scroll;
-  background-clip: border-box;
-}

@@ -6,7 +6,7 @@
   justify-content: space-around;
   background-color: var(--main-color);
   padding:1.5em 2em 1em;
-
+  width:100%;
 }
 
 /* pages on the site */
@@ -14,7 +14,7 @@
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  gap:0 35px;
+  gap:0 1.5em;
 
   font-family: 'Dosis';
   font-style: normal;
