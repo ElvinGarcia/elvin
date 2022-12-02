@@ -16,7 +16,6 @@
       display: flex;
       margin-bottom: .2em;
       color: var(--accent-color);
-      /* font-size: 2.5em; */
   }
 
   .contact_me > form{
@@ -41,7 +40,6 @@
     width: 100%;
     height:2.0em;
     border-style:none;
-    /* border-bottom: 1px solid var(--accent-color); */
     background-color: var(--main-color);
     transition: height .5s ease-in-out ;
   }
@@ -66,7 +64,6 @@
   justify-content: center;
   background-color: var(--accent-color);
   height: 1.5em;
-  /* border-radius:30px; */
 }
 
 .contact_me > form > ul > li.button > button{
