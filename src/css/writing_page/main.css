@@ -9,15 +9,22 @@
 
 /* start of List */
 
+.accordion {
+  --bs-accordion-border-color:black;
+--bs-accordion-border-width: 1.5px;
 
+}
 
-.accordion-item{
-  /* transition: all .15s ease; */
-  /* width:50%; */
-  /* margin-bottom: 1em; */
-  background-color: #ffffff0d;
+.accordion-item > h2 > button, .accordion-item > h2 > button[aria-expanded="true"]{
+  background-color: var(--accent-color);
+  color:var(--main-color);
+  border-radius: black;
   cursor: pointer;
-
+  font-family: var(--headliners) 19.2em;
+}
+.accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: black;
+  border-top-right-radius: black;
 }
 
  /* .title.post{ text-transform: capitalize; } */
@@ -113,4 +120,3 @@ border-radius: 3%;
 
 
 /* ***********************@media query end ******************************* */
-

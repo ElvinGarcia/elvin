@@ -53,7 +53,7 @@ const [data, setData] = useState([]);
 
   return (
     <>
-    <Accordion className={"technical writing list"}>
+    <Accordion className={"technical writing list"} >
         {contentList}
     </Accordion>
       {/* <AllCollapseExample/> */}
