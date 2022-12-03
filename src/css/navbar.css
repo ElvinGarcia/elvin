@@ -33,9 +33,8 @@
 .site_links > .list_item > a.active {
   font-size: large;
   color:var(--accent-color);
-  opacity: .5;
   pointer-events: none;
-  text-transform:uppercase;
+
 
 }
 
