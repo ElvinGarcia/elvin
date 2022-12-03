@@ -12,7 +12,7 @@
 .accordion {
   --bs-accordion-border-color:black;
 --bs-accordion-border-width: 1.5px;
-
+width: 50%;
 }
 
 .accordion-item > h2 > button, .accordion-item > h2 > button[aria-expanded="true"]{
@@ -117,6 +117,16 @@ border-radius: 3%;
 
 
 /* ***********************@media query start ******************************* */
+
+@media (max-width: 800px) {
+
+  .accordion {
+  width: 100%;
+  }
+
+
+  }
+
 
 
 /* ***********************@media query end ******************************* */

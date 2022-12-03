@@ -20,7 +20,8 @@ function Content() {
 
     return (
       <div className="contact_me form">
-        <h2> Say Hello!</h2>
+
+        {/* <h2> Say Hello!</h2> */}
         <form method="POST" name="contact" ref={form} data-netlify="true" onSubmit={formSubmit}>
           <ul>
             <li>
