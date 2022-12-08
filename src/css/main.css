@@ -1,16 +1,16 @@
 @import "reset.css";
-@import "variables.css";
-@import "style-guide.css";
-@import "logo.css";
-@import "navbar.css";
-@import "footer.css";
+@import "./varibles/variables.css";
+@import "./style/style-guide.css";
+@import "./assets/images/logo.css";
+@import "./navbar/navbar.css";
+@import "./footer/footer.css";
 @import "./main_page/about_me.css";
 @import "./main_page/contact.css";
 @import "./project_page/main.css";
 @import "./writing_page/main.css";
 @import "./resume_page/main.css";
-@import "side_heading.css";
-@import "socials.css";
+@import "./header/side_heading.css";
+@import "./socials/socials.css";
 @import "./splash_page/welcome.css";
 
 

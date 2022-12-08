@@ -9,7 +9,7 @@ color: var(--font-color);
 
 #root {
   background-attachment: scroll;
-  background: url(".././assets/images/geometric_pattern.svg") ;
+  background: url("../assets/images/geometric_pattern.svg") ;
   background-size: 5.5em;
   background-clip: border-box;
   background-repeat: repeat;
