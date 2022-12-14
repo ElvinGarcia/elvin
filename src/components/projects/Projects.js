@@ -1,17 +1,19 @@
 import React from "react";
 import Github from "./github/Github";
-import Codepen from "./codepen/Codepen";
+// import Codepen from "./codepen/Codepen";
 import PageTitle from "../page_title/PageTitle";
 
 function Projects(){
 
 
-    return (
+  return (
+      <>
+      <PageTitle name={"Projects"} />
       <main className="main_projects">
-        <PageTitle name={"Projects"} />
+        {/* <Codepen /> */}
         <Github />
-        <Codepen />
       </main>
+      </>
     )
 
 }

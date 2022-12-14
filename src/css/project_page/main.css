@@ -1,100 +1,116 @@
 
+
 .main_projects{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-content: center;
   padding: 10%;
-  gap: .0 2em;
+}
+
+.github{
+  display: grid;
+  gap: 2em;
+  grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
+}
+
+.github >.card{
+  display: flex;
+  flex-flow: column ;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  cursor: pointer;
+  padding:.5em;
+}
+
+.card > .title{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card > .title > h1 {
+  font-family: var(--headliners);
+  text-transform: uppercase;
+  font-size: 1.2em ;
+}
+
+.card > .image{
+max-width: 100%;
+max-height: 100%;
 }
 
 
+.card > .image > img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card > .description{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card > .description > p{
+  font-family: var(--nice-fonts);
+  max-width: 100%;
+  max-height: 100%;
+
+}
 
 /* codepen start */
 
-.main_projects section.codepen{
-  grid-row:2;
-  font-size: 18px;
-  box-sizing: border-box;
-  margin: 0;
-  background-color: var(--main-color);
-}
-
-.codepen.pen{
-  margin-bottom: 4em;
-}
-
-.main_projects section.codepen >  h2 , .main_projects section.github > h2{
- text-transform: capitalize;
- font-size: 2em;
- margin:0;
- font-family:var(--nice-fonts);
- font-weight: 500;
-}
-
-.main_projects section.codepen div.codepen.pen h3.title , .main_projects section.github .project_list >a .project.title{
-  /* margin-top: .7em; */
-  font-size: 1.5em;
-  text-transform: capitalize;
-  padding-bottom:5px;
-  font-weight: 500;
-  color: var(--font-color);
-}
-
-.main_projects section.codepen div.codepen.pen p.description, .main_projects section.github .project_list >a > .project.description {
-  /* margin: .5em 0; */
-  color: var(--font-color);
-  font-size: 18px;
-  text-align: justify;
-}
-
-/* .main_projects section.codepen div.codepen.pen a{
-  color:var(--font-color);
-  text-decoration: none;
-  background-color: transparent;
-
-} */
-
-/*
-.main_projects section.codepen div.codepen.pen a > button{
-  border: 1px solid #ec633a;
-  margin: 15px 0;
-  color:#ec633a;
-  background-color: var(--main-color);
-  border-radius: 1000px 1000px;
-  padding: 10px;
-  width: 100%;
-  cursor: pointer;
-  text-transform: capitalize;
-  letter-spacing: .15em;
-  font-size: 13px;
-}
-
-.main_projects section.codepen div.codepen.pen a > button:hover{
-  transition: all .15s ease-in-out;
-  background-color: #ec633aed;
-  color: white;
-} */
 
 /* codepen end */
 
 /*github start */
-.main_projects section.github{
+
+/* .section.github{
   grid-row:2;
   background-color: var(--main-color);
 }
 
-.main_projects section.github .project_list{
+.card{
+  background-color: black;
+}
+
+.card-img-overlay{
+  cursor: pointer;
+  padding:0;
+} */
+
+/* .card-img-overlay:hover{
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+
+.card-body{
+  border:solid red 1px;
+}
+
+.card-text{
+  color:black;
+  font-family: var(--nice-fonts);
+}
+
+.card-body:hover{
+
+} */
+
+
+
+/* .main_projects section.github .project_list{
   text-align: left;
   padding-bottom:.5em;
   border-bottom: solid #696767 1px;
-}
+} */
 
-.main_projects section.github .project_list:hover{
+/* .main_projects section.github .project_list:hover{
   transition: all .15s ease;
   background-color: #ffffff0d;
-}
+} */
 
-.main_projects section.github .project_list .project.language{
+/* .main_projects section.github .project_list .project.language{
   display: inline-block;
   border:solid white 1px;
   border-radius: 1000px 1000px;
@@ -103,6 +119,6 @@
   font-size: 13px;
   opacity: .7;
   text-transform:capitalize;
-}
+} */
 
 /*github end */

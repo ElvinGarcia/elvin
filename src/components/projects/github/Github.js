@@ -1,5 +1,6 @@
 import React from "react"
-import Content from "./Content";
+// import Content from "./Content";
+import ImageCard from "./ImageCard";
 import { useQuery, gql } from "@apollo/client";
 import { githubPinnedRepos } from '../../../queries/github';
 
@@ -13,10 +14,10 @@ ${githubPinnedRepos.query}
     if (loading) { console.log('loading ...🏃🏻‍♂️..') };
     if(error){console.log("An error occured: ", error)}
 
-  const content = data && data.viewer.pinnedItems.repositories.map((obj) => {
+  const card = data && data.viewer.pinnedItems.repositories.map((obj) => {
     const { id, name, description, languages,stargazerCount, url } = obj.repository;
     return (
-    <Content
+    <ImageCard
       title={name}
       description={description}
       start_count={stargazerCount}
@@ -29,8 +30,8 @@ ${githubPinnedRepos.query}
 
   return (
     <section className="github">
-      <h2>GitHub</h2>
-      {content}
+      {/* <h2>GitHub</h2> */}
+      {card}
     </section>
     )
 
