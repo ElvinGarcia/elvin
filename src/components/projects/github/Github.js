@@ -30,7 +30,6 @@ ${githubPinnedRepos.query}
 
   return (
     <section className="github">
-      {/* <h2>GitHub</h2> */}
       {card}
     </section>
     )

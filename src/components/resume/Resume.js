@@ -7,10 +7,12 @@ export default function Resume() {
 
 
   return (
-    <section className="resume">
+    <>
       <PageTitle name={"Resume"} />
+    <section className="resume">
       <Content />
-    </section>
+      </section>
+    </>
     )
 
 }

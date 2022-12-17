@@ -5,10 +5,12 @@ class Contact extends Component{
 
   render() {
     return (
-      <section className="contact">
+      <>
         <PageTitle name={ "Say Hello!"} />
+      <section className="contact">
         <Content />
-      </section>
+        </section>
+        </>
     )
   }
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import Github from "./github/Github";
-// import Codepen from "./codepen/Codepen";
 import PageTitle from "../page_title/PageTitle";
 
 function Projects(){
@@ -10,7 +9,6 @@ function Projects(){
       <>
       <PageTitle name={"Projects"} />
       <main className="main_projects">
-        {/* <Codepen /> */}
         <Github />
       </main>
       </>

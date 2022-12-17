@@ -6,11 +6,12 @@ class Writings extends Component{
 
   render() {
     return (
-      <main className="main_writings">
+      <>
         <PageTitle name={"Writing"} />
+      <main className="main_writings">
         <TechnicalWriting />
-
-      </main>
+        </main>
+        </>
     )
   }
 }
