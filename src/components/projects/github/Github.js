@@ -1,5 +1,4 @@
 import React from "react"
-// import Content from "./Content";
 import ImageCard from "./ImageCard";
 import { useQuery, gql } from "@apollo/client";
 import { githubPinnedRepos } from '../../../queries/github';
@@ -22,6 +21,7 @@ ${githubPinnedRepos.query}
       description={description}
       start_count={stargazerCount}
       url={url}
+      img={`https://raw.githubusercontent.com/ElvinGarcia/${name}/master/preview.png`}
       key={id}
       languages={languages.languageObjects}
     />)
