@@ -6,7 +6,7 @@ class Contact extends Component{
   render() {
     return (
       <>
-        <PageTitle name={ "Say Hello!"} />
+      <PageTitle name={ "Say Hello!"} />
       <section className="contact">
         <Content />
         </section>

@@ -56,16 +56,6 @@ const [data, setData] = useState([]);
     <Accordion className={"technical writing list"} >
         {contentList}
     </Accordion>
-      {/* <AllCollapseExample/> */}
-        {/* <Accordion.Item eventKey="0">
-          <div className="technical writing list">
-            <h2 className=" technical writing title">Technical Writing</h2>
-            {contentList}
-          </div>
-        </Accordion.Item> */}
-
-
-
   </>
     )
 

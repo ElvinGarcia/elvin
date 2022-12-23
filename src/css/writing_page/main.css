@@ -17,7 +17,7 @@ width: 50%;
 
 .accordion-item > h2 > button, .accordion-item > h2 > button[aria-expanded="true"]{
   background-color: var(--accent-color);
-  color:var(--main-color);
+  color:var(--light-gray);
   border-radius: black;
   cursor: pointer;
   font-family: var(--headliners) 19.2em;
@@ -26,6 +26,8 @@ width: 50%;
   border-top-left-radius: black;
   border-top-right-radius: black;
 }
+
+
 
  /* .title.post{ text-transform: capitalize; } */
 
