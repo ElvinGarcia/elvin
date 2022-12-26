@@ -31,12 +31,19 @@ section.contact{
 .contact_me.form > form > ul li{
   flex-flow: column;
   display: flex;
-  justify-content: space-between;
-  column-gap:.5em;
-  /* border:green solid 3px; */
+  justify-content:center ;
 
+  column-gap:.5em;
+  min-width: 20em;
+  min-height: 5em;
+
+  border:green solid 3px;
 }
 
+.contact_me.form > form > ul > li > label {
+  font-family: var(--headliners);
+  font-size: 1.5em;
+}
 
 /* textarea */
 

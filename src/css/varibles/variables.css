@@ -1,12 +1,12 @@
 /* These are the theme variable colors used throughout the website */
 
 :root{
-  --main-color:#121212;
-  --accent-color:#5d63b5;
-  --font-color:#f2f2f2;
-  --dark-gray:#444;
-  --light-gray:#c1c1c1;
-  --red: #dc143c;
+  --main-color:rgb(18, 18, 18);
+  --accent-color:rgb(93, 99, 181);
+  --font-color:rgb(242, 242, 242);
+  --dark-gray:rgb(68, 68, 68);
+  --light-gray:rgb(193, 193, 193);
+  --red: rgb(220, 20, 60);
   --gtcolumns-3: 1fr 2fr 2fr;
   --nice-fonts:'Open Sans', sans-serif;
   --headliners:'Dosis', sans-serif;
