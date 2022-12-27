@@ -1,7 +1,5 @@
 
-section.contact{
-  /* border:red solid 1px; */
-}
+
 
 .contact_me.form{
   display: flex;
@@ -16,6 +14,9 @@ section.contact{
 
   /* border:red double 3px; */
 
+    max-width:420px;
+    margin:50px auto;
+
 }
 
 .contact_me.form > form > ul{
@@ -24,7 +25,10 @@ section.contact{
  justify-content: space-between;
  align-items: center;
  row-gap:1rem;
- /* border:yellow solid 3px; */
+
+
+background:rgb(30,30,40);
+
 
 }
 
@@ -32,13 +36,26 @@ section.contact{
   flex-flow: column;
   display: flex;
   justify-content:center ;
-
   column-gap:.5em;
   min-width: 20em;
   min-height: 5em;
 
-  border:green solid 3px;
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  /* border:2px solid #CC6666; */
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  max-width:50%;
+  box-sizing: border-box;
+  outline:0;
 }
+
 
 .contact_me.form > form > ul > li > label {
   font-family: var(--headliners);
@@ -54,7 +71,13 @@ section.contact{
   border-style:none;
   background-color: var(--main-color);
   transition: height .5s ease-in-out ;
+
+
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
 }
+
 .contact_me.form > form textarea{
   height:10em;
   padding:.5em;
@@ -88,9 +111,22 @@ contact_me > form > ul > li.button{
   border-radius:30px;
   cursor: pointer;
   color:var(--main-color);
+
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
 }
 
-.contact_me > form > ul > li.button > button:active{
+.contact_me > form > ul > li.button > button:hover{
   box-shadow: inset 0px 0px 5px var(--light-gray);
-
 }
