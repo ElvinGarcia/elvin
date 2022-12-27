@@ -6,4 +6,5 @@ section.heading{
 section.heading > h1{
 font-size: 4em;
 color: var(--accent-color);
+margin-bottom: .5rem;
 }
