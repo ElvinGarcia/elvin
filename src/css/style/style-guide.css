@@ -13,9 +13,22 @@ color: var(--font-color);
   background-size: 5.5em;
   background-clip: border-box;
   background-repeat: repeat;
+
+  /* experimental */
+  -webkit-background-attachment: scroll;
+  -webkit-background: url("../assets/images/geometric_pattern.svg") ;
+  -webkit-background-size: 5.5em;
+  -webkit-background-clip: border-box;
+  -webkit-background-repeat: repeat;
+
+  -moz-background-attachment: scroll;
+  -moz-background: url("../assets/images/geometric_pattern.svg") ;
+  -moz-background-size: 5.5em;
+  -moz-background-clip: border-box;
+  -moz-background-repeat: repeat;
 }
 
-body{
+ body{
 font-weight: 400;
 font-style: normal;
 font-size: 16px;

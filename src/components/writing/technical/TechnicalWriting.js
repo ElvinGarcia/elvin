@@ -2,8 +2,6 @@ import React,{useState, useEffect} from "react";
 import ContentList from "./ContentList";
 
 
-import Accordion from 'react-bootstrap/Accordion';
-
 
 
 export default function TechnicalWriting(){
@@ -47,15 +45,31 @@ const [data, setData] = useState([]);
 
     },[])
 
+  const [clicked, setClicked] = useState("0")
 
-  const contentList = data.map((obj, i) => <ContentList eventKey={i} {...obj} key={i+Math.random()}   />);
+  const handleClick = (i) => {
+    if (clicked === i) {
+      return setClicked("0");
+    }
+    setClicked(i);
+  };
+
+
+  const contentList = data.map((obj, i) => <ContentList
+    eventKey={i}
+    {...obj}
+    key={i + Math.random()}
+    onToggle={() => handleClick(i)}
+    active={clicked === i}
+
+  />);
 
 
   return (
     <>
-    <Accordion className={"technical writing list"} >
+    <div className={"technical writing list"} >
         {contentList}
-    </Accordion>
+    </div>
   </>
     )
 

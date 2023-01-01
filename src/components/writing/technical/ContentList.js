@@ -1,18 +1,28 @@
-import React from "react";
+import React,{useRef} from "react";
 import Content from "./Content";
-import Accordion from 'react-bootstrap/Accordion';
+
 
 const ContentList = (props) => {
+  const contentEl = useRef();
   return (
     <>
-      <Accordion.Item eventKey={props.eventKey}>
-        <Accordion.Header as={"h2"} className="technical writing content title">
+      <div className={`accordion-item ${props.active ? 'active' : ""}`} >
+        <h2 className={"accordion-header"} onClick={props.onToggle}>
           {props.title}
-        </Accordion.Header>
-        <Accordion.Body as={"div"} className="writing content">
-          <Content content={props.content} />
-        </Accordion.Body>
-      </Accordion.Item>
+          {/* <span className="control">—</span> */}
+        </h2>
+        <div
+          className={"accordion-body"}
+          ref={contentEl}
+          style={
+            props.active
+              ? { height: contentEl.current }
+              : { height: "0", fontSize:"0" }
+          }
+        >
+          <Content content={props.content}  />
+        </div>
+      </div>
     </>
   )
 }

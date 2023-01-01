@@ -1,134 +1,95 @@
-/* start of main containter */
 .main_writings{
   display: flex;
-  flex-flow: column ;
+  flex-flow: column;
+  justify-content: center;
   align-items: center;
+  align-content: center;
+  width: 90vw ;
 }
 
-/* end of main containter */
-
-/* start of List */
-
-.accordion {
-  --bs-accordion-border-color:black;
---bs-accordion-border-width: 1.5px;
-width: 50%;
+.technical.writing.list{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  min-width:100%;
 }
 
-.accordion-item > h2 > button, .accordion-item > h2 > button[aria-expanded="true"]{
-  background-color: var(--accent-color);
-  color:var(--light-gray);
-  border-radius: black;
+.accordion-item{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  min-width:100%;
+}
+
+.accordion-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:solid 1px var(--accent-color);
+  padding: .5em;
+  min-width: 100%;
+  border-radius: 30px;
   cursor: pointer;
-  font-family: var(--headliners) 19.2em;
-}
-.accordion-item:first-of-type .accordion-button {
-  border-top-left-radius: black;
-  border-top-right-radius: black;
-}
-
-
-
- /* .title.post{ text-transform: capitalize; } */
-
-/* End of List */
-
-/* start of content */
-
-/* .technical.writing.content{
-margin: 0;
-min-height: 90vh;
-border-radius: 3%;
-} */
-
-/* .writing.content.title{
-  font-weight: 400;
-  font-size: 1.8em;
-  color: var(--font-color);
-  text-transform: capitalize;
-  margin: 0;
-  padding:0;
-} */
-
-/* start formating text for readabilty */
-/* .writing.content{
-  text-align: justify;
-  line-height: 1.9em;
-  font-size: 1.1em;
-  padding: 0 .8em;
-  overflow: auto;
-} */
-
-
-
-.writing.content p {
-  line-height: calc(1ex / 0.32);
-}
-
-.writing.content h1 {
-  font-size: 2.5em;
-  line-height: calc(1ex / 0.42);
-  margin: calc(1ex / 0.42) 0;
-}
-
-.writing.content h2 {
-  font-size: 2em;
-  line-height: calc(1ex / 0.42);
-  margin: calc(1ex / 0.42) 0;
-}
-
-.writing.content h3 {
-  font-size: 1.75em;
-  line-height: calc(1ex / 0.38);
-  margin: calc(1ex / 0.38) 0;
-}
-
-.writing.content h4 {
   font-size: 1.5em;
-  line-height: calc(1ex / 0.37);
-  margin: calc(1ex / 0.37) 0;
+
+/* animation on hover code */
+/* the first value is the foreground image, second is the background image */
+  background-image: linear-gradient(var(--accent-color),var(--accent-color));
+  /* horizontal, vertical */
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  /* first value: width of the image, second value: height */
+  background-size: 0% 100%;
+  transition: background-size .5s;
+  /* Apply to 2 properties */
+  transition: background-size .5s;
 }
 
-.writing.content p {
-  font-size: 1em;
-  line-height: calc(1ex / 0.32);
-  margin: calc(1ex / 0.32) 0;
+.accordion-header:hover{
+  /* animation on hover code */
+  /* first value: width of the image, second value: height */
+  background-size: 100% 100%;
 }
 
-.writing.content {
-  --red: 230;
-  --green: 230;
-  --blue: 230;
-  --aa-brightness: calc(( (var(--red) * 299) + (var(--green) * 587) + (var(--blue) * 114)) / 1000);
-  --aa-brightness: calc(((var(--red) * 299) + (var(--green) * 587) + (var(--blue) * 114) ) / 1000);
-  --aa-color: calc((var(--aa-brightness) - 128) * -1000);
-  background: rgb(var(--red), var(--green), var(--blue));
-  color: rgb(var(--aa-color), var(--aa-color), var(--aa-color));
+
+ .accordion-body{
+  display:flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 90vw;
+  overflow-x: auto;
+  line-height: 2em;
+  padding: .5em 1em 1em;
 }
 
-@media (prefers-color-scheme: dark) {
-  .writing.content {
-      --red: 30;
-      --green: 30;
-      --blue: 30;
+/* .accordion-item.active .accordion-header{
+  background-color: var(--accent-color);
+} */
+
+/* media queries */
+@media screen and (min-width:530px) {
+
+  .main_writings{
+    width: 80vw ;
+  }
+
+}
+
+@media screen and (min-width:600px) {
+
+  .main_writings{
+    width: 75vw ;
   }
 }
-/* end formating text for readabilty */
+  @media screen and (min-width:900px) {
+    .main_writings{
+      width: 45vw ;
+    }
 
-/* end of content */
-
-
-/* ***********************@media query start ******************************* */
-
-@media (max-width: 800px) {
-
-  .accordion {
-  width: 100%;
-  }
-
-
-  }
-
-
-
-/* ***********************@media query end ******************************* */
+}
