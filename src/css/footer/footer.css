@@ -3,12 +3,11 @@
 /* footer start */
 footer{
   display: flex;
-  flex-flow: row nowrap;
   justify-content: space-around;
   background-color:  var(--main-color);
-  /* min-height: 5em; */
   padding: 1em 0 ;
-  /* row-gap:2em; */
+  min-width: 100%;
+  margin-bottom: 1px;
 }
 
 footer > div.social_links{
