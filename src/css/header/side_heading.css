@@ -1,12 +1,12 @@
 
-section.heading{
+section.title{
   display: flex;
   justify-content: flex-start;
   width: 100%;
 
 }
 
-section.heading > h1{
+section.title > h1{
 font-size: 4em;
 color: var(--accent-color);
 margin-bottom: .5rem;

@@ -3,7 +3,7 @@ import Content from "./Content";
 
  const PageTitle = (props) => {
    return (
-     <section className="heading">
+     <section className="title">
        <Content name={props.name} />
      </section>
 
