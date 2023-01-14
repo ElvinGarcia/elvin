@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import NavMenu from "./NavMenu";
 import UserData from "../../siteData/UserData";
-import elvin from "../../assets/images/elvin.svg"
+import elvin from "../../assets/images/elvin.svg";
+
 
 
 function Nav () {
