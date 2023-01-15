@@ -23,6 +23,8 @@ class NavMenu extends Component{
           this.props.site_links.map((obj, id) => {
             if (obj.type === "site_links") {
               return <li key={id} className="list_item"> <NavLink to={obj.url}>{obj.name}</NavLink></li>
+            } else if (obj.type === 'resume') {
+          return <li key={id} className="list_item"> <a href={obj.url} target='_blank' rel='noopener noreferrer'>{obj.name}</a></li>
             } else {
               return null
             }

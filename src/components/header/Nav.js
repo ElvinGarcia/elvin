@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import NavMenu from "./NavMenu";
 import UserData from "../../siteData/UserData";
 import elvin from "../../assets/images/elvin.svg";
-
+import Pdf from "../../assets/docs/resume.pdf";
 
 
 function Nav () {
@@ -33,9 +33,9 @@ function Nav () {
               url: 'Writing'
             },
           {
-            type:'site_links',
+            type:'resume',
               name: 'Resume',
-              url: 'Resume'
+            url: Pdf
             },
           {
             type:'site_links',
