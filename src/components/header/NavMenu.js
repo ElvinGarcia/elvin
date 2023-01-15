@@ -24,7 +24,7 @@ class NavMenu extends Component{
             if (obj.type === "site_links") {
               return <li key={id} className="list_item"> <NavLink to={obj.url}>{obj.name}</NavLink></li>
             } else if (obj.type === 'resume') {
-          return <li key={id} className="list_item"> <a href={obj.url} target='_blank' rel='noopener noreferrer'>{obj.name}</a></li>
+          return <li key={id} className="list_item"> <a href='https://docs.google.com/document/d/e/2PACX-1vRhYiDEctLPU0buQvLxKAhTlROpN9-e1EAzXNU-qYBkVIhz2bkFQN6FdAQIJyVH_p9qQwBUrPLzQw1T/pub' target='_blank' rel='noopener noreferrer'>{obj.name}</a></li>
             } else {
               return null
             }
