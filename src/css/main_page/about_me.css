@@ -63,7 +63,6 @@ div.about_me > .image_container >img {
     div.about_me > .image_container {
       height: 13em;
       padding-top: .5em;
-      border: green solid 2px;
       align-self: center;
 
 
@@ -71,7 +70,6 @@ div.about_me > .image_container >img {
 
     div.about_me > .image_container >img {
         height: 13em;
-        border: red solid 2px;
     }
 
   }
