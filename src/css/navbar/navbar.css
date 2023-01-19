@@ -66,6 +66,18 @@
   /* letter-spacing: .1em; */
 }
 
+
+.external_link > a {
+  display: flex;
+  justify-content: space-around;
+}
+
+.external_link > a .feather-external-link{
+  align-self: flex-end;
+  margin-left: .2em;
+  width: 1em;
+}
+
 /* Nav menu end */
 
 /* ***********************@media query start ******************************* */

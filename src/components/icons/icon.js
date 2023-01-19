@@ -3,13 +3,15 @@ import PropTypes from 'prop-types';
 import {
   IconExternal,
   IconGitHub,
-} from '../../components/icons';
+  IconLinkedin,
+} from '../icons';
 
 const Icon = ({ name }) => {
   switch (name) {
     case 'GitHub':
-      console.log("at the case statement")
       return <IconGitHub />;
+    case 'linkedin':
+      return <IconLinkedin />;
     default:
       return <IconExternal />;
   }

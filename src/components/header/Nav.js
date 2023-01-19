@@ -3,6 +3,7 @@ import NavMenu from "./NavMenu";
 import UserData from "../../siteData/UserData";
 import elvin from "../../assets/images/elvin.svg";
 import Pdf from "../../assets/docs/resume.pdf";
+import { Icon } from '../icons';
 
 
 function Nav () {
@@ -35,7 +36,8 @@ function Nav () {
           {
             type:'resume',
               name: 'Resume',
-            url: Pdf
+            url: Pdf,
+              component:<Icon name="external"/>
             },
           {
             type:'site_links',
@@ -58,7 +60,7 @@ function Nav () {
 
     return (
       <nav className="nav-menu">
-       {menu}
+        {menu}
       </nav>
     );
 }
