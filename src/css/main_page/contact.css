@@ -19,18 +19,14 @@
 
 }
 
-.contact_me.form > form > ul{
+/* .contact_me.form > form > ul{
  display: flex;
  flex-flow:column;
  justify-content: space-between;
  align-items: center;
  row-gap:1rem;
-
-
 background:rgb(30,30,40);
-
-
-}
+} */
 
 .contact_me.form > form > ul li{
   flex-flow: column;
@@ -39,7 +35,6 @@ background:rgb(30,30,40);
   column-gap:.5em;
   min-width: 20em;
   min-height: 5em;
-
   color:white;
   font-family: Helvetica, Arial, sans-serif;
   font-weight:500;
@@ -47,7 +42,6 @@ background:rgb(30,30,40);
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
-  /* border:2px solid #CC6666; */
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
@@ -57,10 +51,10 @@ background:rgb(30,30,40);
 }
 
 
-.contact_me.form > form > ul > li > label {
+/* .contact_me.form > form > ul > li > label {
   font-family: var(--headliners);
   font-size: 1.5em;
-}
+} */
 
 /* textarea */
 
@@ -71,37 +65,36 @@ background:rgb(30,30,40);
   border-style:none;
   background-color: var(--main-color);
   transition: height .5s ease-in-out ;
-
-
   height: 150px;
   line-height: 150%;
   resize:vertical;
 }
 
-.contact_me.form > form textarea{
+/* .contact_me.form > form textarea{
   height:10em;
   padding:.5em;
 
-}
+} */
+
 .contact_me > form input:focus, textarea:focus{
   border-color: var(--main-color);
   outline: none;
 }
 
-.contact_me  textarea:focus {
+/* .contact_me  textarea:focus {
   text-align: top;
   height: 5em;
-}
+} */
 
 
 /* submit button */
-contact_me > form > ul > li.button{
+/* contact_me > form > ul > li.button{
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   background-color: var(--accent-color);
   height: 1.5em;
-}
+} */
 
 .contact_me > form > ul > li.button > button{
   color:var(--font-color);
@@ -114,7 +107,7 @@ contact_me > form > ul > li.button{
 
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   width: 100%;
-  background:#CC6666;
+  background:var(--accent-color);
   border-radius:5px;
   border:0;
   cursor:pointer;
@@ -127,6 +120,7 @@ contact_me > form > ul > li.button{
   font-weight:700;
 }
 
-.contact_me > form > ul > li.button > button:hover{
+
+.contact_me.form > form > ul li:hover{
   box-shadow: inset 0px 0px 5px var(--light-gray);
 }
