@@ -26,8 +26,8 @@ section.about_me > h2{
    justify-content:center ;
    gap:0 .8em;
    max-width: 39em;
-  line-height:1.7em;
-  font-size: 1.1em;
+   line-height:1.7em;
+   font-size: 1.1em;
 }
 
 div.about_me >  .content{
