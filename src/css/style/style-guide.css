@@ -7,14 +7,15 @@ box-sizing: border-box;
 color: var(--font-color);
 }
 
-#root {
-  background-attachment: scroll;
-  background: url("../assets/images/geometric_pattern.svg") ;
-  background-size: 5.5em;
+#root{
+  /* background-attachment: scroll; */
+  background-attachment: fixed;
+  background: url("../assets/images/geometric_pattern.svg");
+  background-size: 5.3rem;
   background-clip: border-box;
   background-repeat: repeat;
-  min-height: 100vh;
 }
+
 
  body{
 font-weight: 400;
@@ -26,6 +27,7 @@ font-style: var(--font-color);
 background-color: var(--main-color);
 -webkit-text-size-adjust: 100%;
 -moz-osx-font-smoothing: grayscale;
+
 }
 
 
