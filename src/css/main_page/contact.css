@@ -6,27 +6,16 @@
   flex-flow: column;
  justify-content: space-between;
  align-items:center;
- /* border:red dotted 2px; */
 }
 
 .contact_me.form > form{
   min-width: 100%;
-
-  /* border:red double 3px; */
-
     max-width:420px;
     margin:50px auto;
 
 }
 
-/* .contact_me.form > form > ul{
- display: flex;
- flex-flow:column;
- justify-content: space-between;
- align-items: center;
- row-gap:1rem;
-background:rgb(30,30,40);
-} */
+
 
 .contact_me.form > form > ul li{
   flex-flow: column;
@@ -51,10 +40,7 @@ background:rgb(30,30,40);
 }
 
 
-/* .contact_me.form > form > ul > li > label {
-  font-family: var(--headliners);
-  font-size: 1.5em;
-} */
+
 
 /* textarea */
 
@@ -81,20 +67,6 @@ background:rgb(30,30,40);
   outline: none;
 }
 
-/* .contact_me  textarea:focus {
-  text-align: top;
-  height: 5em;
-} */
-
-
-/* submit button */
-/* contact_me > form > ul > li.button{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  background-color: var(--accent-color);
-  height: 1.5em;
-} */
 
 .contact_me > form > ul > li.button > button{
   color:var(--font-color);
@@ -124,3 +96,41 @@ background:rgb(30,30,40);
 .contact_me.form > form > ul li:hover{
   box-shadow: inset 0px 0px 5px var(--light-gray);
 }
+
+.calendly-badge-widget{
+  position: sticky !important;
+  float: right;
+  /* right:18%; */
+}
+
+.calendly-badge-content{
+  border-radius: 50% !important;
+  width: 95px !important;
+  height:95px  !important;
+  opacity: 45%;
+  background-color: var(--accent-color) !important;
+
+}
+/* media query start */
+@media screen and (max-width: 800px) {
+  .calendly-badge-widget{
+    position: sticky !important;
+    float: right;
+    right:1%;
+
+  }
+
+  .calendly-badge-content{
+    position: relative !important;
+    border-radius: 50% !important;
+    width: 95px !important;
+    height:95px  !important;
+    opacity: 45%;
+  }
+
+
+}
+
+
+
+/* media query end */
