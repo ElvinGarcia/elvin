@@ -62,7 +62,7 @@
 | White           | ![#F2F2F2](https://via.placeholder.com/20/F2F2F2?text=+) `#F2F2F2` |
 | Dark Gray       | ![#444444](https://via.placeholder.com/20/444444?text=+) `#444444` |
 | Light Gray      | ![#C1C1C1](https://via.placeholder.com/20/C1C1C1?text=+) `#C1C1C1` |
-| red             | ![#DC143C](https://via.placeholder.com/20/DC143C?text=+) `#DC143C` |
+| Red             | ![#DC143C](https://via.placeholder.com/20/DC143C?text=+) `#DC143C` |
 
 
 
