@@ -24,7 +24,7 @@ function FooterMenu(props){
     );
 
   const social_links = props.social_links.map((obj, id) => {
-    return obj.type === "social_links" ? <a href={obj.href} name={obj.name} target={"_blank"} rel={"me"} key={id}>{obj.svg}</a> : null;
+    return  obj.name !== "mastodon" ? <a href={obj.href} name={obj.name} target={"_blank"} rel={"noreferrer"} key={id}>{obj.svg}</a> : <a href={obj.href} name={obj.name} rel="me"key={id}>{obj.svg}</a>;
     }
     );
 
