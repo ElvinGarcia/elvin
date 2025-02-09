@@ -29,8 +29,8 @@ function App() {
     <UserData.Provider value={data}>
       <Routes>
         {/* <Route index element={<Welcome/>}/> */}
-        <Route index element={<Main/>}/>
         <Route path="/" element={<Layout />}>
+        <Route index element={<Main />} />
           <Route path="/About_me" element={<Main/>}/>
           <Route path="/Projects" element={<Projects/>}/>
           <Route path="/Writing" element={<Writing/> }/>
