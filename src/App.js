@@ -6,7 +6,7 @@ import { Routes, Route } from "react-router-dom";
   import Main from './components/main/Main';
   import Writing from './components/writing/Writings';
   import Resume from './components/resume/Resume';
-  import Welcome from './components/splash_screen/Welcome';
+  // import Welcome from './components/splash_screen/Welcome';
   import Contact from './components/main/contact/Contact';
 // apollo and graphQl
   import { useQuery, gql } from "@apollo/client";
