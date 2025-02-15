@@ -26,7 +26,7 @@ function Nav () {
           {
             type:'site_links',
               name: 'About',
-              url: 'about_me'
+              url: 'about-me'
             },
           {
               type:'site_links',
